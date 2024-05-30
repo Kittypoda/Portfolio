@@ -1,0 +1,54 @@
+body{
+  background: radial-gradient(198.55% 103.31% at 80.73% 27.31%, #D5F5F2 0%, #DAE2CB 29%, #FFE3F7 60%);
+}
+
+main{
+  height: 800px;
+}
+
+h1{
+  font-family: "Encode Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 70px;
+  color: black;
+}
+
+h2{
+  font-family: "inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: black;
+}
+
+p{
+  font-family: "inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+
+}
+
+a{
+  font-family: "inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  padding: 20px;
+
+}
+
+
+button{
+  border-radius: 30px;
+  border: 1px solid #000;
+  padding: 15px 30px;
+  background: rgba(217, 217, 217, 0.01);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.65);
+}
