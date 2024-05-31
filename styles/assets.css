@@ -3,14 +3,18 @@ body{
 }
 
 main{
-  height: 700px;
+  height: 800px;
+}
+
+header{
+  margin: 20px;
 }
 
 h1{
   font-family: "Encode Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: 70px;
+  font-size: 50px;
   color: black;
   margin: 0px;
 }
@@ -28,6 +32,7 @@ p{
   font-optical-sizing: auto;
   font-weight: 300;
   font-size: 16px;
+  line-height: 20px;
   color: black;
 
 }
@@ -53,5 +58,24 @@ button{
 }
 
 button:hover {
-background: linear-gradient(0deg, rgba(228, 232, 185, 0.20) 0%, rgba(228, 232, 185, 0.20) 100%), rgba(217, 217, 217, 0.01);
+background: rgba(246, 244, 210, 0.42);
+}
+
+footer {
+  position: fixed;
+  bottom:0px;
+  height:40px; 
+}
+
+footer a {
+  right: 20px;
+  text-transform: uppercase;  
+}
+
+@media (min-width: 537px) {
+  h1{
+    font-size: 70px;
+  }
+  
+  
 }

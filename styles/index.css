@@ -1,12 +1,28 @@
 .imoda{
-  margin: 180px 0px 0px 180px;
-  max-width: 600px;
+  margin: 50px 40px 0px 20px;
+  max-width: 300px;
 }
 
 .imoda h1, p{
-  padding: 20px;
+  padding: 0px;
+  margin: 5px;
 }
 
 .imoda button{
-  margin: 20px 0px 0px 20px;
+  margin: 20px 0px 0px 10px;
+}
+
+@media (min-width: 537px) {
+  
+  .imoda{
+    margin: 120px 70px 0px 120px;
+    max-width: 600px;
+  }
+  
+  .imoda h1, p{
+    padding: 10px;
+  }
+  
+
+
 }
