@@ -11,11 +11,11 @@ header{
 }
 
 h1{
-  font-family: "Encode Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
+  font-style: normal;
   font-size: 50px;
-  color: black;
   margin: 0px;
 }
 
@@ -44,7 +44,7 @@ a{
   font-size: 16px;
   text-decoration: none;
   color: black;
-  padding: 20px;
+  padding: 10px;
 
 }
 
@@ -74,8 +74,7 @@ footer a {
 
 @media (min-width: 537px) {
   h1{
-    font-size: 70px;
+    font-size: 80px;
   }
-  
-  
+   
 }

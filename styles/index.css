@@ -1,11 +1,15 @@
 .imoda{
-  margin: 50px 40px 0px 20px;
-  max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 60px;
 }
 
-.imoda h1, p{
+.imoda p{
   padding: 0px;
-  margin: 5px;
+  margin: 20px;
 }
 
 .imoda button{
@@ -15,12 +19,16 @@
 @media (min-width: 537px) {
   
   .imoda{
-    margin: 120px 70px 0px 120px;
-    max-width: 600px;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+}
   
   .imoda h1, p{
-    padding: 10px;
+    max-width: 600px;
   }
   
 
