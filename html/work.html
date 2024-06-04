@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="/styles/assets.css">
 <link rel="stylesheet" href="/styles/index.css">
 <link rel="stylesheet" href="/styles/work.css">
+<script type="module" src="/script.mjs"></script>
 </head>
 <body>
   <header>
@@ -18,14 +19,19 @@
     <h2>2024</h2>
   </header>
   <main>
-    <section class="imoda">
-      <h1>My work</h1>
-      <div class="mywork-grid">
-        <div class="item1"></div>
-        <div class="item2"></div>
-        <div class="item3"></div>
+    <section class="work-cards">
+      <div class="item1"></div>
+      <div class="item2"></div>
+      <div class="item3"></div>
+    </section>
+    <section class="slider-section">
+      <div class="slider">
+        <input type="checkbox" id="slider" class="slider-checkbox" checked>
+        <label for="slider" class="slider-label">
+          <span class="slider-text">About</span>
+        </label>
       </div>
-      <button><a href="/index.html"> About me</a></button>
+
     </section>
   </main>
   <footer>

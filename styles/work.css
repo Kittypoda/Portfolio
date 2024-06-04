@@ -1,4 +1,8 @@
-.mywork-grid{
+body{
+  background: radial-gradient(198.55% 103.31% at 80.73% 27.31%, #FFE3F7 4.82%, #DAE2CB 45.32%, #D5F5F2 68.27%);
+}
+
+.work-cards{
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
