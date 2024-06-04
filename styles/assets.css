@@ -59,7 +59,7 @@ button{
 }
 
 button:hover {
-background: rgba(246, 244, 210, 0.42);
+  background: rgba(0, 0, 0, 0.34);
 }
 
 footer {
@@ -75,8 +75,8 @@ footer a {
 
 .slider{
   position: absolute;
-  top: 750px;
-  left: 135px;
+  top: 550px;
+  left: 25px;
 }
 
 .slider-checkbox {
@@ -95,11 +95,11 @@ footer a {
   align-items: center;
   justify-content: space-between;
   padding: 5px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
 .slider-label:hover {
-  background: rgba(246, 244, 210, 0.42);
+  background: rgba(0, 0, 0, 0.10);
   }
 
 
@@ -152,9 +152,15 @@ footer a {
 
 
 
-@media (min-width: 1200px) {
+@media (min-width: 800px) {
   h1{
     font-size: 51px;
   }
    
+
+  .slider{
+    position: absolute;
+    top: 750px;
+    left: 135px;
+  }
 }

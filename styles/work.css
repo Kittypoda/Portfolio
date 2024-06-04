@@ -5,20 +5,22 @@ body{
 .work-cards{
   display: flex;
   gap: 1rem;
-  padding-top: 40px;
-  margin: 120px;
+  padding-top: 70px;
+  margin: 20px;
 }
 
 .item1, .item2, .item3{
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 432px;
+  height: 310px;
   width: 600px;
   border-radius: 60px;
 border: 1px solid #000; 
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2)
 }
+
+
 
 .item1{
   background-image: url(/img/hungry\ eyes\ mockup.png);
@@ -31,4 +33,27 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2)
 
 .item3{
   background-image: url(/img/hungry\ eyes\ mockup.png);
+}
+
+
+@media (min-width: 800px) {
+
+  .work-cards{
+    display: flex;
+    gap: 1rem;
+    padding-top: 40px;
+    margin: 120px;
+  }
+
+
+  .item1, .item2, .item3{
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 432px;
+    width: 600px;
+    border-radius: 60px;
+  border: 1px solid #000; 
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2)
+  }
 }
