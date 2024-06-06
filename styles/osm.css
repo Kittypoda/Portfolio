@@ -1,6 +1,7 @@
 body{
-  background-color: #EEF6F0;
+  background-color: #F4DBDA;
 }
+
 
 .page-info{
  display: flex;
@@ -34,7 +35,7 @@ span{
 
 @media (min-width: 800px){
   .page-info img{
-    max-width: 800px;
+    max-width: 700px;
     height: auto;
   }
 
