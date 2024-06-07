@@ -47,7 +47,7 @@ body{
   .work-cards {
     display: flex;
     gap: 1rem;
-    padding-top: 120px;
+    padding-top: 60px;
     margin: 0 120px; 
     justify-content: center; 
   }
