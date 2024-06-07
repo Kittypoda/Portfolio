@@ -1,3 +1,7 @@
+#work{
+  margin: 0px;
+}
+
 body{
   background: radial-gradient(198.55% 103.31% at 80.73% 27.31%, #FFE3F7 4.82%, #DAE2CB 45.32%, #D5F5F2 68.27%);
 }
@@ -49,16 +53,13 @@ body{
   .work-cards {
     gap: 2rem;
     padding-top: 60px;
-    margin: 0 120px; 
-    
+    margin: 0 120px;   
   }
   
   .item {
     height: 432px;
     width: 450px;
-    border-radius: 20px;
-    
-    
+    border-radius: 20px; 
   }
   
  
