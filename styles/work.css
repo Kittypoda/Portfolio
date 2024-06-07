@@ -63,21 +63,6 @@ body{
     transition: transform 0.3s ease-in-out;
   }
   
-  .item:hover {
-    transform: scale(1.05); /* Slightly enlarge the item on hover */
-  }
-  
-  /* Specific Item Backgrounds */
-  .item1 {
-    background-image: url('../img/hungry\ eyes\ mockup.png');
-  }
-  
-  .item2 {
-    background-image: url('../img/osm\ mockup.png'); /* Change to your actual image path */
-  }
-  
-  .item3 {
-    background-image: url('../img/hungry\ eyes\ mockup.png'); /* Change to your actual image path */
-  }
+ 
 
 }
