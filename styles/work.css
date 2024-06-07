@@ -4,18 +4,17 @@ body{
 
 .work-cards {
   display: flex;
-  flex-wrap: wrap;
   gap: 1rem;
   padding-top: 40px;
-  margin: 0 120px; /* Adjusted to maintain some margin but not too much */
-  justify-content: center; /* Center the items */
+  margin: 60px 20px; 
+  justify-content: center; 
 }
 
 .item {
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 432px;
+  height: 232px;
   width: 450px;
   border-radius: 20px;
   border: 0px solid #000;
@@ -24,20 +23,22 @@ body{
 }
 
 .item:hover {
-  transform: scale(1.05); /* Slightly enlarge the item on hover */
+  transform: scale(1.05); 
 }
 
-/* Specific Item Backgrounds */
+
 .item1 {
   background-image: url('../img/hungry\ eyes\ mockup.png');
 }
 
 .item2 {
-  background-image: url('../img/osm\ mockup.png'); /* Change to your actual image path */
+  background-image: url('../img/osm\ mockup.png'); 
+  background-position: center;
+  
 }
 
 .item3 {
-  background-image: url('../img/hungry\ eyes\ mockup.png'); /* Change to your actual image path */
+  background-image: url('../img/hungry\ eyes\ mockup.png'); 
 }
 
 
@@ -46,9 +47,9 @@ body{
   .work-cards {
     display: flex;
     gap: 1rem;
-    padding-top: 40px;
-    margin: 0 120px; /* Adjusted to maintain some margin but not too much */
-    justify-content: center; /* Center the items */
+    padding-top: 120px;
+    margin: 0 120px; 
+    justify-content: center; 
   }
   
   .item {
