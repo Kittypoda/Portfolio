@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (this.checked) {
       window.location.href = './html/work.html';
     } else {
-      window.location.href = './index.html';
+      window.location.href = '../index.html';
     }
   });
 });
