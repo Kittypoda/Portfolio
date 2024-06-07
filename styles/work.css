@@ -2,59 +2,82 @@ body{
   background: radial-gradient(198.55% 103.31% at 80.73% 27.31%, #FFE3F7 4.82%, #DAE2CB 45.32%, #D5F5F2 68.27%);
 }
 
-.work-cards{
+.work-cards {
   display: flex;
-  gap: 0.5rem;
-  padding-top: 70px;
-  margin: 20px;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 40px;
+  margin: 0 120px; /* Adjusted to maintain some margin but not too much */
+  justify-content: center; /* Center the items */
 }
 
-.item1, .item2, .item3{
+.item {
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 310px;
-  width: 600px;
-  border-radius: 90px;
-border: 1px solid #000; 
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2)
+  height: 432px;
+  width: 450px;
+  border-radius: 20px;
+  border: 0px solid #000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
 }
 
-
-
-.item1{
-  background-image: url(/img/hungry\ eyes\ mockup.png);
+.item:hover {
+  transform: scale(1.05); /* Slightly enlarge the item on hover */
 }
 
-.item2{
-  
-  background-image: url(/img/osm\ mockup.png);
- background-position: 50%;
+/* Specific Item Backgrounds */
+.item1 {
+  background-image: url('/img/hungry\ eyes\ mockup.png');
 }
 
-.item3{
-  background-image: url(/img/hungry\ eyes\ mockup.png);
+.item2 {
+  background-image: url('/img/osm\ mockup.png'); /* Change to your actual image path */
+}
+
+.item3 {
+  background-image: url('/img/hungry\ eyes\ mockup.png'); /* Change to your actual image path */
 }
 
 
 @media (min-width: 800px) {
 
-  .work-cards{
+  .work-cards {
     display: flex;
     gap: 1rem;
     padding-top: 40px;
-    margin: 120px;
+    margin: 0 120px; /* Adjusted to maintain some margin but not too much */
+    justify-content: center; /* Center the items */
   }
-
-
-  .item1, .item2, .item3{
+  
+  .item {
     display: flex;
     background-size: cover;
     background-repeat: no-repeat;
     height: 432px;
-    width: 600px;
+    width: 450px;
     border-radius: 20px;
-    border: 0px solid #000; 
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2)
-    }
+    border: 0px solid #000;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .item:hover {
+    transform: scale(1.05); /* Slightly enlarge the item on hover */
+  }
+  
+  /* Specific Item Backgrounds */
+  .item1 {
+    background-image: url('/img/hungry\ eyes\ mockup.png');
+  }
+  
+  .item2 {
+    background-image: url('/img/osm\ mockup.png'); /* Change to your actual image path */
+  }
+  
+  .item3 {
+    background-image: url('/img/hungry\ eyes\ mockup.png'); /* Change to your actual image path */
+  }
+
 }
