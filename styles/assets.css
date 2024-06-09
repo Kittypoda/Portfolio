@@ -50,8 +50,8 @@ p{
 a{
   font-family: "inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: 200;
+  font-size: 15px;
   text-decoration: none;
   color: black;
   padding: 10px;
@@ -159,9 +159,9 @@ footer {
 
 .footer-links {
   position: absolute;
-  right: 30px; 
+  right: 20px; 
   display: flex;
-  gap: 10px; 
+  gap: 0px; 
 }
 
 footer a {
@@ -171,7 +171,7 @@ footer a {
 }
 
 
-@media (min-width: 800px) {
+@media (min-width: 950px) {
   h1{
     font-size: 51px;
   }
@@ -182,4 +182,13 @@ footer a {
     top: 700px;
     left: 135px;
   }
+  a{
+    font-size: 16px;
+  }
+
+  .footer-links {
+    right: 30px; 
+    gap: 10px; 
+  }
+
 }

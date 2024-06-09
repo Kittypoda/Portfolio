@@ -19,7 +19,7 @@ body{
   margin: 20px 0px 0px 10px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   
   .imoda{
     display: flex;

@@ -48,7 +48,7 @@ body{
 }
 
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
 
   .work-cards {
     gap: 2rem;
