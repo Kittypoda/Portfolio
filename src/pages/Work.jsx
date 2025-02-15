@@ -1,11 +1,34 @@
+import { useNavigate } from "react-router-dom";
+
+
 function Work() {
+  const navigate = useNavigate();
+
   return (
-    <div>
-      <h1>Mitt Arbeid</h1>
-      <p>Her presenterer jeg prosjektene mine!</p>
-      <a href="/">Tilbake til Hjem</a>
-    </div>
+    <main>
+      <section className="work-cards">
+        <a href="/hungry" className="item item1"></a>
+        <a href="/osm" className="item item2"></a>
+        <a href="/rainy" className="item item3"></a>
+      </section>
+
+      <section className="slider-section">
+        <div className="slider">
+          <input
+            type="checkbox"
+            id="slider"
+            className="slider-checkbox"
+            onChange={() => navigate("/")}
+            checked
+          />
+          <label htmlFor="slider" className="slider-label">
+            <span className="slider-text">About</span>
+          </label>
+        </div>
+      </section>
+    </main>
   );
 }
 
 export default Work;
+
