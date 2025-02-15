@@ -5,6 +5,7 @@ import Slider from "./components/Slider";
 import Footer from "./components/Footer";
 import Work from "./pages/Work";
 import "./styles/assets.css";
+import "./styles/layout.css"
 
 function App() {
   return (
