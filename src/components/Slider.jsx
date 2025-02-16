@@ -1,33 +1,40 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
+import "../styles/assets.css"
 
 function Slider() {
   const navigate = useNavigate();
+  const location = useLocation();
+  const [checked, setChecked] = useState(location.pathname === "/work");
 
-  const handleToggle = (event) => {
-    if (event.target.checked) {
-      navigate("/work");
-    } else {
-      navigate("/");
-    }
+  useEffect(() => {
+    setChecked(location.pathname === "/work");
+  }, [location.pathname]);
+
+  const handleToggle = () => {
+    setChecked(!checked);
+    navigate(checked ? "/" : "/work");
   };
 
   return (
-    <section className="slider-index">
-      <div className="slider">
-        <input
-          type="checkbox"
-          id="slider"
-          className="slider-checkbox"
-          onChange={handleToggle}
-        />
-        <label htmlFor="slider" className="slider-label">
-          <span className="slider-text">My Work</span>
-        </label>
-      </div>
+    <section className="slider">
+      <input
+        type="checkbox"
+        id="slider"
+        className="slider-checkbox"
+        checked={checked}
+        onChange={handleToggle}
+      />
+      <label htmlFor="slider" className="slider-label">
+        <span className={`slider-text ${checked ? "about" : "work"}`}>
+          {checked ? "About" : "My Work"}
+        </span>
+      </label>
     </section>
   );
 }
 
 export default Slider;
+
 
 
