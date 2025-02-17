@@ -1,27 +1,34 @@
-import { Routes, Route } from "react-router-dom";
+import { useState } from "react";
 import Header from "./components/Header";
 import About from "./components/About";
+import Work from "./pages/Work";
 import Slider from "./components/Slider";
 import Footer from "./components/Footer";
-import Work from "./pages/Work";
+import { Routes, Route } from "react-router-dom";
 import "./styles/assets.css";
-import "./styles/layout.css"
+import "./styles/headerToggle.css";
+import "./styles/layout.css";
 
 function App() {
+  const [language, setLanguage] = useState("en");
+
   return (
     <div>
-      <Header />
+      <Header setLanguage={setLanguage} />
       <main>
         <Routes>
-          {/* Hjemmesiden */}
           <Route path="/" element={
             <>
-              <About />
+              <About language={language} />
+              <Slider /> 
+            </>
+          } />
+          <Route path="/work" element={
+            <>
+              <Work language={language} />
               <Slider />
             </>
           } />
-          {/* Arbeid-siden */}
-          <Route path="/work" element={<Work />} />
         </Routes>
       </main>
       <Footer />
@@ -30,5 +37,6 @@ function App() {
 }
 
 export default App;
+
 
 
