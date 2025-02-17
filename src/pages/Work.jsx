@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-
-function Work() {
+function Work({ language }) {
   const navigate = useNavigate();
 
   return (
@@ -22,7 +21,9 @@ function Work() {
             checked
           />
           <label htmlFor="slider" className="slider-label">
-            <span className="slider-text">About</span>
+            <span className="slider-text">
+              {language === "en" ? "Om meg" : "About"}
+            </span>
           </label>
         </div>
       </section>
@@ -31,4 +32,5 @@ function Work() {
 }
 
 export default Work;
+
 

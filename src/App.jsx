@@ -17,18 +17,24 @@ function App() {
       <Header setLanguage={setLanguage} />
       <main>
         <Routes>
-          <Route path="/" element={
-            <>
-              <About language={language} />
-              <Slider /> 
-            </>
-          } />
-          <Route path="/work" element={
-            <>
-              <Work language={language} />
-              <Slider />
-            </>
-          } />
+          <Route
+            path="/"
+            element={
+              <>
+                <About language={language} />
+                <Slider language={language} /> {/* Språk-prop sendes til Slider */}
+              </>
+            }
+          />
+          <Route
+            path="/work"
+            element={
+              <>
+                <Work language={language} />
+                <Slider language={language} />
+              </>
+            }
+          />
         </Routes>
       </main>
       <Footer />

@@ -4,7 +4,7 @@ function About({ language }) {
       <h1>{language === "en" ? "Hei, jeg heter Oda" : "Hi, I'm Oda"}</h1>
       {language === "en" ? (
         <p>
-          Jeg bor i et rosa hus, omringet av skog, like ved en norsk fjord, hvor jeg studerer front-end utvikling og bygger videre på min bakgrunn i grafisk design.
+          Jeg bor i et lite rosa hus, omringet av skog, like ved en norsk fjord, hvor jeg studerer front-end utvikling og bygger videre på min bakgrunn i grafisk design.
           <br />
           <br />
           Jeg brenner for å skape vakre og intuitive brukeropplevelser, med et sterkt fokus på rene og inspirerende digitale grensesnitt som føles naturlige og enkle å bruke. 

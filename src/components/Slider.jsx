@@ -1,15 +1,14 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-function Slider() {
+function Slider({ language }) {
   const navigate = useNavigate();
   const location = useLocation();
   const [checked, setChecked] = useState(location.pathname === "/work");
 
-  // Oppdater slider-posisjonen når URL endres
   useEffect(() => {
     setChecked(location.pathname === "/work");
-  }, [location.pathname]);
+  }, [location.pathname, language]); // ✅ Nå reagerer den også på språkbytte
 
   const handleToggle = () => {
     const newPath = checked ? "/" : "/work";
@@ -22,13 +21,15 @@ function Slider() {
       <div className="slider-wrapper">
         <input
           type="checkbox"
-          id="slider"
+          id="workToggle"
           className="slider-checkbox"
           checked={checked}
           onChange={handleToggle}
         />
-        <label htmlFor="slider" className="slider-label">
-          <span className="slider-text">{checked ? "About" : "My Work"}</span>
+        <label htmlFor="workToggle" className="slider-label">
+          <span className="slider-text">
+            {checked ? (language === "en" ? "Om meg" : "About") : (language === "en" ? "Mitt arbeid" : "My Work")}
+          </span>
         </label>
       </div>
     </section>
@@ -36,3 +37,9 @@ function Slider() {
 }
 
 export default Slider;
+
+
+
+
+
+

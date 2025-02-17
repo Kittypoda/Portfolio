@@ -73,6 +73,7 @@ button:hover {
   background: rgba(0, 0, 0, 0.10);
 }
 
+
 .slider {
   display: flex;
   justify-content: center;
@@ -85,7 +86,7 @@ button:hover {
 }
 
 .slider-label {
-  width: 140px;
+  width: 190px;
   height: 45px;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(8px);
@@ -95,7 +96,7 @@ button:hover {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center; /* Sørger for at tekst alltid er i midten */
+  justify-content: center;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -120,7 +121,7 @@ button:hover {
 }
 
 .slider-checkbox:checked + .slider-label::before {
-  transform: translateX(92px);
+  transform: translateX(140px);
   background: linear-gradient(145deg, #000, #000);
 }
 
@@ -130,31 +131,22 @@ button:hover {
   font-size: 14px;
   position: absolute;
   top: 50%;
-  left: 55%;
-  transform: translate(-50%, -50%); /* Sørger for midtstilt tekst */
+  left: 50%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
   transition: opacity 0.3s ease-in-out;
   color: #000;
 }
 
-/* Standard: "My Work" vises */
-.slider-text.work {
-  opacity: 1;
-}
-
-/* Når slideren er aktivert, gjør "About" synlig */
-.slider-checkbox:checked + .slider-label .slider-text.work {
-  opacity: 0;
-}
 
 .slider-text.about {
   opacity: 0;
 }
 
-/* Når slideren er aktivert, gjør "About" synlig */
+
 .slider-checkbox:checked + .slider-label .slider-text.about {
   opacity: 1;
 }
-
 
 .content {
   display: flex;

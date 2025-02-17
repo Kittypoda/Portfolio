@@ -11,8 +11,8 @@
 
 /* 🚀 Unik styling for språk-slideren */
 .language-slider-label {
-  width: 140px;
-  height: 45px;
+  width: 110px;
+  height: 38px;
   background: black;
   border-radius: 50px;
   cursor: pointer;
@@ -32,12 +32,12 @@
 /* ✅ Sirkelen i språk-slideren */
 .language-slider-label::before {
   content: "";
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   background-color: white;
   border-radius: 50%;
   position: absolute;
-  left: 5px;
+  left: 10px;
   transition: transform 0.3s ease;
 }
 
