@@ -1,10 +1,28 @@
+body{
+  background: radial-gradient(198.55% 103.31% at 80.73% 27.31%, #D5F5F2 0%, #DAE2CB 29%, #FFE3F7 60%);
+  transition: opacity 0.5s ease-in-out;
+}
+
+.imoda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  margin: 0 auto;
+  max-width: 90%;
+  text-align: center;
+}
+
+
+.imoda button{
+  margin: 20px 0px 0px 10px;
+}
+
 #work{
   margin: 0px;
 }
 
-body{
-  background: radial-gradient(198.55% 103.31% at 80.73% 27.31%, #FFE3F7 4.82%, #DAE2CB 45.32%, #D5F5F2 68.27%);
-}
+
 
 .work-cards {
   display: flex;
@@ -47,21 +65,15 @@ body{
   background-size: fill;
 }
 
-
-@media (min-width: 900px) {
-
-  .work-cards {
-    gap: 2rem;
-    padding-top: 60px;
-    margin: 0 120px;   
-  }
+@media (min-width: 600px) {
   
-  .item {
-    height: 432px;
-    width: 450px;
-    border-radius: 20px; 
-  }
+  .imoda{
+    max-width: 650px;
+    padding-top: 70px;
+}
   
- 
+  
+  
+
 
 }
