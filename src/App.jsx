@@ -2,12 +2,14 @@ import { useState } from "react";
 import Header from "./components/Header";
 import About from "./components/About";
 import Work from "./pages/Work";
+import Bidzy from "./pages/Bidzy";
 import Slider from "./components/Slider";
 import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 import "./styles/assets.css";
 import "./styles/headerToggle.css";
 import "./styles/layout.css";
+
 
 function App() {
   const [language, setLanguage] = useState("en");
@@ -22,7 +24,7 @@ function App() {
             element={
               <>
                 <About language={language} />
-                <Slider language={language} /> {/* Språk-prop sendes til Slider */}
+                <Slider language={language} /> 
               </>
             }
           />
@@ -31,7 +33,14 @@ function App() {
             element={
               <>
                 <Work language={language} />
-                <Slider language={language} />
+              </>
+            }
+          />
+            <Route
+            path="/bidzy"
+            element={
+              <>
+                <Bidzy language={language} />
               </>
             }
           />

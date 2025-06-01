@@ -86,7 +86,7 @@ button:hover {
 }
 
 .slider-label {
-  width: 190px;
+  width: 160px;
   height: 45px;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(8px);
@@ -121,7 +121,7 @@ button:hover {
 }
 
 .slider-checkbox:checked + .slider-label::before {
-  transform: translateX(140px);
+  transform: translateX(110px);
   background: linear-gradient(145deg, #000, #000);
 }
 

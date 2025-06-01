@@ -28,7 +28,7 @@ function Slider({ language }) {
         />
         <label htmlFor="workToggle" className="slider-label">
           <span className="slider-text">
-            {checked ? (language === "en" ? "Om meg" : "About") : (language === "en" ? "Mitt arbeid" : "My Work")}
+            {checked ? (language === "en" ? "Om meg" : "About") : (language === "en" ? "Prosjekter" : "My Work")}
           </span>
         </label>
       </div>
