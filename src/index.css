@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply transition-opacity duration-500 ease-in-out;
+    background: linear-gradient(114deg, #DFCADC 1.18%, #E4D3D3 64.16%);
+  }
+}
+
+
+@layer base {
+  h1 {
+    @apply font-['Bakbak_One'] font-normal text-[31px] text-black m-0 md:text-[51px];
+  }
+
+  h2 {
+    @apply font-['Inter'] font-light text-[20px] text-black;
+  }
+
+  h3 {
+    @apply font-['Inter'] font-extralight text-[14px] leading-[20px] text-black p-0 m-[5px];
+  }
+
+  p {
+    @apply font-['Inter'] font-extralight text-[16px] leading-[25px] text-black md:leading-[30px];
+  }
+
+  a {
+    @apply font-['Inter'] font-extralight text-[16px] no-underline text-black;
+  }
+
+  button {
+    @apply rounded-[22px] border border-black px-[35px] py-[15px] shadow-md bg-[rgba(217,217,217,0.01)] hover:bg-[rgba(0,0,0,0.10)];
+  }
+
+  main {
+    @apply h-[1000px];
+  }
+
+  header {
+    @apply m-[10px] md:m-[30px];
+  }
+
+  footer {
+    @apply sticky bottom-0 w-full h-[50px];
+  }
+
+  .footer-links {
+    @apply flex justify-center items-center gap-[10px];
+  }
+
+  footer a {
+    @apply px-[10px] mr-[20px] font-extralight text-[14px];
+  }
+
+  body.fade-out {
+    @apply opacity-0;
+  }
+
+  .content {
+    @apply flex flex-col items-center justify-center h-screen;
+  }
+
+  .page {
+    @apply block;
+  }
+
+  .slider {
+    @apply flex justify-center items-center pt-[10px] md:pt-[30px];
+  }
+
+  .slider-checkbox {
+    @apply hidden;
+  }
+
+  .slider-label {
+    @apply w-[160px] h-[45px] bg-[rgba(255,255,255,0.2)] backdrop-blur-md rounded-full border border-black cursor-pointer relative flex items-center justify-center transition-all duration-300 shadow-md hover:bg-[rgba(255,255,255,0.3)] hover:shadow-lg;
+  }
+
+  .slider-label::before {
+    content: '';
+    @apply w-[31px] h-[31px] rounded-full absolute left-[10px] bg-gradient-to-br from-black to-[#333] transition-transform duration-300 shadow-[inset_2px_2px_4px_rgba(255,255,255,0.1),_inset_-2px_-2px_4px_rgba(0,0,0,0.1),_2px_2px_6px_rgba(0,0,0,0.15)];
+  }
+
+  .slider-checkbox:checked + .slider-label::before {
+    @apply translate-x-[110px] bg-black;
+  }
+
+  .slider-text {
+    @apply font-['Inter'] font-normal text-[14px] absolute top-1/2 left-1/2 p-[10px] -translate-x-1/2 -translate-y-1/2 transition-opacity text-black;
+  }
+
+  .slider-text.about {
+    @apply opacity-0;
+  }
+
+  .slider-checkbox:checked + .slider-label .slider-text.about {
+    @apply opacity-100;
+  }
+
+  .form-input {
+    @apply w-full shadow-md p-4 rounded-md font-['Inter'] font-light text-sm placeholder-gray-600 border border-white focus:outline-none focus:ring-0 focus:border-black;
+  }
+}
+
+

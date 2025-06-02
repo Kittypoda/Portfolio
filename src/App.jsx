@@ -6,10 +6,9 @@ import Bidzy from "./pages/Bidzy";
 import Slider from "./components/Slider";
 import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
-import "./styles/assets.css";
 import "./styles/headerToggle.css";
 import "./styles/layout.css";
-
+import './index.css';
 
 function App() {
   const [language, setLanguage] = useState("en");
