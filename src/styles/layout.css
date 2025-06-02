@@ -1,7 +1,8 @@
-body{
-  background: radial-gradient(198.55% 103.31% at 80.73% 27.31%, #D5F5F2 0%, #DAE2CB 29%, #FFE3F7 60%);
+body {
+  background: linear-gradient(114deg, #DFCADC 1.18%, #E4D3D3 64.16%);
   transition: opacity 0.5s ease-in-out;
 }
+
 
 .imoda {
   display: flex;
@@ -13,6 +14,13 @@ body{
   text-align: center;
 }
 
+.odaimg {
+  max-width: '350px';
+  width: '100%';
+  height: 'auto';
+  display: 'block';
+  margin: '0 auto';
+}
 
 .imoda button{
   margin: 20px 0px 0px 10px;
@@ -73,7 +81,7 @@ body{
 @media (min-width: 600px) {
   
   .imoda{
-    max-width: 650px;
+    max-width: 950px;
     padding-top: 70px;
 }
 .work-title {

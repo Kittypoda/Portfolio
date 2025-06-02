@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Header from "./components/Header";
-import About from "./components/About";
+import About from "./pages/About";
 import Work from "./pages/Work";
 import Bidzy from "./pages/Bidzy";
 import Slider from "./components/Slider";
