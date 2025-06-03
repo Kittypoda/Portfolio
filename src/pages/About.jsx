@@ -11,7 +11,7 @@ function About({ language }) {
         />
       </section>
 
-      <section className="imoda">
+      <section className="flex flex-col items-center px-6 text-center mx-auto pt-12 max-w-[90%] md:max-w-[1250px]">
         {language === "en" ? (
           <p>
             Jeg bor i et lite rosa hus, omringet av skog, like ved en norsk fjord, hvor jeg studerer front-end utvikling og bygger videre på min bakgrunn i grafisk design.

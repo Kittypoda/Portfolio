@@ -1,11 +1,5 @@
 
-  .imoda {
-    @apply flex flex-col items-center px-6 text-center mx-auto pt-4 max-w-[90%] md:max-w-[1050px];
-  }
 
-  .imoda button {
-    @apply mt-[20px] ml-[10px];
-  }
 
   .work-title {
     @apply pt-[60px] md:pt-[70px] flex items-center justify-center;

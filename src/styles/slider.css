@@ -3,7 +3,7 @@
 }
 
 .slider-label {
-  @apply w-[180px] h-[51px] backdrop-blur-md rounded-full cursor-pointer relative flex items-center justify-center transition-all duration-300 shadow-md hover:bg-[rgba(255,255,255,0.3)] hover:shadow-lg;
+  @apply w-[170px] h-[54px] backdrop-blur-md rounded-full cursor-pointer relative flex items-center justify-center transition-all duration-300 shadow-md hover:bg-[rgba(255,255,255,0.3)] hover:shadow-lg;
 }
 
 .slider-label::before {
@@ -16,7 +16,7 @@
 }
 
 .slider-checkbox:checked + .slider-label::before {
-  transform: translateX(120px);
+  transform: translateX(115px);
 }
 
 .slider-label:hover::before {
