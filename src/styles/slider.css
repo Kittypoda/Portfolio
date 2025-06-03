@@ -1,0 +1,44 @@
+.slider-checkbox {
+  @apply hidden;
+}
+
+.slider-label {
+  @apply w-[180px] h-[51px] backdrop-blur-md rounded-full cursor-pointer relative flex items-center justify-center transition-all duration-300 shadow-md hover:bg-[rgba(255,255,255,0.3)] hover:shadow-lg;
+}
+
+.slider-label::before {
+  content: '';
+  @apply absolute top-[8px] left-[10px] w-[31px] h-[31px] rounded-full;
+  background-color: #FFF7E7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  transform: translateX(0);
+}
+
+.slider-checkbox:checked + .slider-label::before {
+  transform: translateX(120px);
+}
+
+.slider-label:hover::before {
+  transform: translateX(5px);
+}
+
+.slider-checkbox:checked + .slider-label:hover::before {
+  transform: translateX(115px);
+}
+
+.slider-text {
+  @apply font-['Inter'] font-normal text-[14px] absolute top-1/2 left-1/2 p-[10px] -translate-x-1/2 -translate-y-1/2 transition-opacity text-white;
+}
+
+.slider-text.about {
+  @apply opacity-0;
+}
+
+.slider-checkbox:checked + .slider-label .slider-text.about {
+  @apply opacity-100;
+}
+
+.form-input {
+  @apply w-full shadow-md p-4 rounded-md font-['Inter'] font-light text-sm placeholder-gray-600 border border-white focus:outline-none focus:ring-0 focus:border-black;
+}

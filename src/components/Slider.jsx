@@ -8,35 +8,42 @@ function Slider({ language }) {
 
   useEffect(() => {
     setChecked(location.pathname === "/work");
-  }, [location.pathname, language]); // ✅ Nå reagerer den også på språkbytte
+  }, [location.pathname, language]);
 
   const handleToggle = () => {
-    const newPath = checked ? "/" : "/work";
     setChecked(!checked);
-    navigate(newPath);
+  
+    // Vent med navigering til animasjonen har spilt (300-400ms)
+    setTimeout(() => {
+      const newPath = checked ? "/" : "/work";
+      navigate(newPath);
+    }, 400); // Juster etter overgangstiden i CSS
   };
+  
 
   return (
-    <section className="slider">
-      <div className="slider-wrapper">
-        <input
-          type="checkbox"
-          id="workToggle"
-          className="slider-checkbox"
-          checked={checked}
-          onChange={handleToggle}
-        />
-        <label htmlFor="workToggle" className="slider-label">
-          <span className="slider-text">
-            {checked ? (language === "en" ? "Om meg" : "About") : (language === "en" ? "Prosjekter" : "My Work")}
-          </span>
-        </label>
-      </div>
+    <section className="slider fixed bottom-40 left-1/2 transform -translate-x-1/2 z-20">
+      <input
+        type="checkbox"
+        id="workToggle"
+        className="slider-checkbox"
+        checked={checked}
+        onChange={handleToggle}
+      />
+      <label htmlFor="workToggle" className="slider-label  border border-[#E2C5D0] bg-[#D7C0D0]">
+        <span className={`slider-text ${checked ? 'opacity-0' : 'opacity-100'}`}>
+          {language === "en" ? "My Work" : "Prosjekter"}
+        </span>
+        <span className={`slider-text about ${checked ? 'opacity-100' : 'opacity-0'}`}>
+          {language === "en" ? "About" : "Om meg"}
+        </span>
+      </label>
     </section>
   );
 }
 
 export default Slider;
+
 
 
 

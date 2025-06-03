@@ -6,7 +6,7 @@ import Bidzy from "./pages/Bidzy";
 import Slider from "./components/Slider";
 import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
-import "./styles/headerToggle.css";
+import "./styles/slider.css";
 import "./styles/layout.css";
 import './index.css';
 

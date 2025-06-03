@@ -1,10 +1,6 @@
 
   .imoda {
-    @apply flex flex-col items-center text-center mx-auto pt-[60px] max-w-[90%] md:max-w-[950px] md:pt-[70px];
-  }
-
-  .odaimg {
-    @apply max-w-[350px] w-full h-auto block mx-auto;
+    @apply flex flex-col items-center px-6 text-center mx-auto pt-4 max-w-[90%] md:max-w-[1050px];
   }
 
   .imoda button {
