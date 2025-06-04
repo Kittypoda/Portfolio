@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
 
 @tailwind base;
 @tailwind components;
@@ -65,9 +68,9 @@
 
   .page {
     @apply block;
-  }
-
-  
+  }  
 }
 
-
+.slick-dots li.slick-active div {
+  background-color: #FFF2D7; 
+}
