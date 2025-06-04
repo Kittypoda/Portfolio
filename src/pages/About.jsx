@@ -13,24 +13,32 @@ function About({ language }) {
 
       <section className="flex flex-col items-center px-6 text-center mx-auto pt-12 max-w-[90%] md:max-w-[1250px]">
         {language === "en" ? (
-          <p>
-            Jeg bor i et lite rosa hus, omringet av skog, like ved en norsk fjord, hvor jeg studerer front-end utvikling og bygger videre på min bakgrunn i grafisk design.
-            <br /><br />
-            Jeg brenner for å skape vakre og intuitive brukeropplevelser, med et sterkt fokus på rene og inspirerende digitale grensesnitt som føles naturlige og enkle å bruke. 
-            Med et skarpt øye for detaljer og en lidenskap for estetikk, forener jeg design og utvikling for å skape sømløse, tilgjengelige og engasjerende løsninger.
-            <br /><br />
-            Har du spørsmål? Ta gjerne kontakt på{" "}
-            <a href="mailto:odakrolstad@gmail.com">odakrolstad@gmail.com</a>.
-          </p>
+          <>
+            <p className="mb-4">
+              Hei! Jeg heter Oda og jobber i skjæringspunktet mellom grafisk design og front-end-utvikling. <br></br> Jeg bor i et lite rosa hus ved en norsk fjord – omgitt av skog, blomster og masse kreativt driv.
+            </p>
+            <p className="mb-4">
+              Jeg brenner for å utvikle visuelle opplevelser som både <em>føles</em> riktige og <em>fungerer</em> sømløst. Med sans for struktur, estetikk og detaljer, bygger jeg digitale grensesnitt som er rene, inspirerende og enkle å bruke – alltid med brukeren i sentrum. Jeg kombinerer det tekniske og det visuelle for å lage løsninger som både fungerer i praksis og føles naturlige å møte.
+            </p>
+            <p>
+              Har du spørsmål? Ta gjerne kontakt på{" "}
+              <a href="mailto:odakrolstad@gmail.com">odakrolstad@gmail.com</a>.
+            </p>
+          </>
         ) : (
-          <p>
-            I live in a pink house, tucked away in a forest by a Norwegian fjord, where I study front-end development and build on my background in graphic design.
-            <br /><br />
-            I’m passionate about crafting beautiful and intuitive user experiences, focusing on designing clean, inspiring digital interfaces that feel effortless to use. <br></br> With a keen eye for detail and a deep appreciation for aesthetics, I bridge the gap between design and development, ensuring seamless, accessible, and engaging interactions.
-            <br /><br />
-            Feel free to reach out at{" "}
-            <a href="mailto:odakrolstad@gmail.com">odakrolstad@gmail.com</a>.
-          </p>
+          <>
+            <p className="mb-4">
+            Hi! I’m Oda, and I work at the intersection of graphic design and front-end development.<br></br> I live in a small pink house by a Norwegian fjord – surrounded by forest, flowers, and creative energy.
+            </p>
+            <p className="mb-4">
+            I’m passionate about crafting visual experiences that <em>feel</em> right and <em>function</em> beautifully. With an eye for structure, aesthetics, and detail, I build clean, inspiring interfaces that are intuitive and user-centered.
+            I bring together technical knowledge and visual thinking to create digital solutions that work in practice and feel natural to engage with.
+            </p>
+            <p>
+              Feel free to reach out at{" "}
+              <a href="mailto:odakrolstad@gmail.com">odakrolstad@gmail.com</a>.
+            </p>
+          </>
         )}
       </section>
     </>
@@ -38,5 +46,6 @@ function About({ language }) {
 }
 
 export default About;
+
 
 

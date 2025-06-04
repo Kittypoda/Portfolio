@@ -34,7 +34,7 @@
   }
 
   a {
-    @apply font-['Inter'] text-[14px] no-underline text-white;
+    @apply font-['Inter'] text-[16px] no-underline text-white;
   }
 
   button {
