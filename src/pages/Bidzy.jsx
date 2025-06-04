@@ -1,23 +1,21 @@
 import { useNavigate } from "react-router-dom";
 import bidzyBanner from "../assets/images/bidzybanner.png";
+import bidzyResponsive from "../assets/images/bidzyresponsive.png";
+import bidzySome from "../assets/images/bidzysome.png";
 
 function Bidzy({ language }) {
-  const navigate = useNavigate();
-
   return (
-    <main className="bg-[#E9E5ED] mx-8 rounded-xl shadow-md">
-      <section className="px-4 md:px-6 pt-8 flex justify-center">
-        <div className="max-w-5xl">
+    <div className="bg-[#E9E5ED] mx-8 rounded-xl shadow-md py-12">
+      <section className=" md:px-6 flex justify-center">
+        <div className="max-w-5xl w-full">
           <img src={bidzyBanner} alt="banner" className="w-full h-auto" />
         </div>
       </section>
 
-      <section>
-        <div className="px-6 md:px-20">
-          <h1 className="font-baloo font-extrabold text-[30px] md:text-[45px]">
-           
-            Out with the old, <br></br>in with the cash
-             
+      <section className="mt-12">
+        <div className="px-2 md:px-20">
+          <h1 className="font-baloo font-extrabold text-sm/10 text-[27px] md:text-[45px] mb-6">
+            Out with the old, <br />in with the cash
           </h1>
 
           <p className="font-baloo text-black text-md md:text-lg max-w-[700px]">
@@ -65,7 +63,37 @@ function Bidzy({ language }) {
           </p>
         </div>
       </section>
-    </main>
+      <section className="pt-8 px-6 md:px-20">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {/* Responsiveness */}
+    <div>
+      <h2 className="font-baloo font-bold text-3xl">Responsiveness</h2>
+      <img
+        src={bidzyResponsive}
+        alt="desktop and mobile"
+        className="max-w-[750px] w-full h-auto pt-4"
+      />
+      <p className="font-baloo text-black pt-2 text-md md:text-lg max-w-[700px]">
+        Bidzy er designet for å fungere sømløst på både mobil, nettbrett og desktop. Layout, navigasjon og innhold tilpasses skjermstørrelsen for å sikre en optimal opplevelse – uansett hvilken enhet brukeren velger.
+      </p>
+    </div>
+
+    {/* Social media */}
+    <div>
+      <h2 className="font-baloo font-bold text-3xl">Social media</h2>
+      <img
+        src={bidzySome}
+        alt="social media feed"
+        className="max-w-[350px] w-full h-auto pt-4"
+      />
+      <p className="font-baloo text-black pt-2 text-md md:text-lg max-w-[700px]">
+        Jeg har laget en serie sosiale medier-thumbnails for å vise hvordan Bidzys visuelle identitet fungerer utenfor nettsiden.
+      </p>
+    </div>
+  </div>
+</section>
+
+    </div>
   );
 }
 
