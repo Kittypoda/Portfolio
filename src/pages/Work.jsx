@@ -37,7 +37,7 @@ function Work({ language }) {
       <section className="block md:hidden py-8">
         <SlickSlider {...mobileSettings}>
           {cards.map((card, index) => (
-            <div key={index} className="px-2">
+            <div key={index} className="">
               <Link to={card.link}>
               <div className="mx-auto max-w-[95%] sm:max-w-[85%] aspect-[4/5]">
 
