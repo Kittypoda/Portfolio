@@ -1,7 +1,9 @@
 import SlickSlider from "react-slick";
 import { Link } from "react-router-dom";
 import bidzycard from "../assets/images/bidzycard.png";
-import Slider from "../components/Slider"; // husk å importere
+import holidazecard from "../assets/images/holidazecard.png";
+import lvlcard from "../assets/images/lvlcard.png";
+import Slider from "../components/Slider";
 
 function Work({ language }) {
   const mobileSettings = {
@@ -12,62 +14,71 @@ function Work({ language }) {
     slidesToScroll: 1,
     arrows: false,
     centerMode: true,
-    centerPadding: "20px",
-    appendDots: dots => (
+    centerPadding: "15%", // gir jevn gløtt også på mellomstadier
+    appendDots: (dots) => (
       <div className="pt-4">
         <ul className="flex justify-center gap-2">{dots}</ul>
       </div>
     ),
-    customPaging: i => (
-      <div className="w-4 h-4 rounded-full bg-white hover:bg-[#FFF2D7] transition"></div>
+    customPaging: () => (
+      <div className="w-4 h-4 rounded-full bg-white hover:bg-[#FFF2D7] transition" />
     ),
   };
 
+  const cards = [
+    { src: bidzycard, alt: "Bidzy", link: "/bidzy" },
+    { src: holidazecard, alt: "Holidaze", link: "/holidaze" },
+    { src: lvlcard, alt: "Level Up", link: "/levelup" },
+  ];
+
   return (
     <main>
-      {/* Mobil: slider */}
-      <section className="block md:hidden px-4 py-8">
+      {/* Mobil og mellomstor skjerm: Karusell */}
+      <section className="block md:hidden py-8">
         <SlickSlider {...mobileSettings}>
-          <Link to="/bidzy">
-            <img
-              src={bidzycard}
-              alt="Bidzy"
-              className="rounded-lg shadow-md max-h-[500px]"
-            />
-          </Link>
-          <div className="bg-gray-200 rounded-lg shadow-md h-[500px] flex items-center justify-center text-gray-500 text-lg">
-            <span>{language === "en" ? "Coming Soon" : "Kommer snart"}</span>
-          </div>
-          <div className="bg-gray-200 rounded-lg shadow-md h-[500px] flex items-center justify-center text-gray-500 text-lg">
-            <span>{language === "en" ? "Coming Soon" : "Kommer snart"}</span>
-          </div>
+          {cards.map((card, index) => (
+            <div key={index} className="px-2">
+              <Link to={card.link}>
+              <div className="mx-auto max-w-[95%] sm:max-w-[85%] aspect-[4/5]">
+
+                  <img
+                    src={card.src}
+                    alt={card.alt}
+                    className="rounded-3xl shadow-md w-full h-full object-cover"
+                  />
+                </div>
+              </Link>
+            </div>
+          ))}
         </SlickSlider>
       </section>
 
-      {/* Desktop: grid */}
-      <section className="hidden md:grid grid-cols-3 gap-6 px-8 py-12">
-        <Link to="/bidzy">
-          <img
-            src={bidzycard}
-            alt="Bidzy"
-            className="rounded-lg shadow-md max-h-[500px] w-full object-cover"
-          />
-        </Link>
-        <div className="bg-gray-200 rounded-lg shadow-md h-[500px] flex items-center justify-center text-gray-500 text-lg">
-          <span>{language === "en" ? "Coming Soon" : "Kommer snart"}</span>
-        </div>
-        <div className="bg-gray-200 rounded-lg shadow-md h-[500px] flex items-center justify-center text-gray-500 text-lg">
-          <span>{language === "en" ? "Coming Soon" : "Kommer snart"}</span>
-        </div>
+      {/* Desktop: Grid */}
+      <section className="hidden md:grid grid-cols-3 gap-6 px-10 py-12 max-w-[1400px] mx-auto">
+        {cards.map((card, index) => (
+          <Link key={index} to={card.link} className="rounded-3xl shadow-md overflow-hidden">
+            <div className="aspect-[4/5]">
+              <img
+                src={card.src}
+                alt={card.alt}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </Link>
+        ))}
       </section>
 
-      {/* About/Work-toggle slider (fikset!) */}
+      {/* Toggle slider (About / Work) */}
       <Slider language={language} />
     </main>
   );
 }
 
 export default Work;
+
+
+
+
 
 
 
