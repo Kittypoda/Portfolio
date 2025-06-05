@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "./components/Header";
 import About from "./pages/About";
 import Work from "./pages/Work";
+import Holidaze from "./pages/Holidaze";
 import Bidzy from "./pages/Bidzy";
 import Slider from "./components/Slider";
 import Footer from "./components/Footer";
@@ -40,6 +41,14 @@ function App() {
             element={
               <>
                 <Bidzy language={language} />
+              </>
+            }
+          />
+          <Route
+            path="/holidaze"
+            element={
+              <>
+                <Holidaze language={language} />
               </>
             }
           />
