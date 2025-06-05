@@ -125,16 +125,47 @@ function Bidzy({ language }) {
       </section>
 
       <section className="px-6 md:px-20 pt-8">
+  <h2 className="font-baloo font-bold text-3xl pb-4">
+    {language === "en" ? "Forbedringer i prosjektet" : "Project improvements"}
+  </h2>
+  <p className="font-baloo text-black text-md md:text-lg max-w-3xl">
+    {language === "en" ? (
+      <>
+        Etter første versjon av prosjektet har jeg gjort flere forbedringer for å øke sikkerheten, strukturen og kvaliteten:
+        <ul className="list-disc list-inside mt-4">
+          <li>Flyttet API-nøkkelen til en <code>.env</code>-fil for bedre sikkerhet</li>
+          <li>Lagde en gjenbrukbar valideringsfunksjon (<code>validateBid</code>) og skrev enhetstester med Vitest</li>
+          <li>Satte opp testmiljø med <code>jsdom</code> og <code>vitest</code></li>
+          <li>Strukturerte filene bedre og forbedret mappestrukturen</li>
+          <li>Oppdaterte prosjektbeskrivelsen og dokumentasjonen</li>
+        </ul>
+      </>
+    ) : (
+      <>
+        Since the initial version of the project, I’ve made several improvements to enhance security, structure, and quality:
+        <ul className="list-disc list-inside mt-4">
+          <li>Moved the API key to a <code>.env</code> file for improved security</li>
+          <li>Created a reusable validation function (<code>validateBid</code>) and added unit tests using Vitest</li>
+          <li>Set up a testing environment with <code>jsdom</code> and <code>vitest</code></li>
+          <li>Updated project description and documentation</li>
+        </ul>
+      </>
+    )}
+  </p>
+</section>
+
+
+      <section className="px-6 md:px-20 pt-8">
         <div className="font-baloo font-bold text-2xl pb-6">
           {language === "no" ? "Want to see more?" : "Vil du se mer?"}
         </div>
         <div>
-          <a href="https://bidzy.netlify.app" target="_blank" rel="noopener noreferrer">
+          <a href="https://kittypoda.github.io/Bidzy-Semester-project/" target="_blank" rel="noopener noreferrer">
             <button className="mr-2 bg-[#6D8CDC] text-white w-32 font-baloo text-lg px-4 py-2 font-bold rounded-md">
               Webside
             </button>
           </a>
-          <a href="https://github.com/odakrolstad/bitzy-auction" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Kittypoda/Bidzy-Semester-project" target="_blank" rel="noopener noreferrer">
             <button className="bg-[#6D8CDC] text-white w-32 font-baloo text-lg px-4 py-2 font-bold rounded-md">
               Github
             </button>
