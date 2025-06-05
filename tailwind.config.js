@@ -16,8 +16,17 @@ export default {
         overlaygreen: '#123F45',
         deletered: '#B93127',
       },
+      keyframes: {
+        'float-x': {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(-1%)' },
+        },
+      },
+      animation: {
+        'float-x': 'float-x 10s ease-in-out infinite',
+      },
     },
-    },
+  },
   plugins: [],
 };
 

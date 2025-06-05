@@ -7,16 +7,18 @@ function Holidaze({ language }) {
 
   return (
     <main className=" mx-8">
-     <section className="relative rounded-3xl rounded-tr-none overflow-hidden h-[900px] text-white">
+     <section className="relative rounded-3xl rounded-tr-none overflow-hidden h-[800px] text-white">
   {/* Bakgrunnsbilde med zoom */}
+  <div className="absolute inset-0 w-[100%] md:-translate-x-1/2 md:animate-float-x ">
   <img
     src="/src/assets/images/holidazebanner.png"
     alt="Holidaze banner"
-    className="absolute inset-0 w-full h-full object-cover scale-[180%] md:scale-[165%] z-0"
+    className="absolute inset-0 w-full h-full object-cover scale-[180%] md:scale-[165%] z-0 hover:[animation-play-state:paused]"
   />
+  </div>
 
   {/* Overlay */}
-  <div className="absolute inset-0 bg-overlaygreen bg-opacity-50 z-10"></div>
+  <div className="absolute inset-0 bg-overlaygreen bg-opacity-75 z-10"></div>
  
 
 
@@ -68,8 +70,32 @@ function Holidaze({ language }) {
       </>
       )}
     </p>
+    <div className="font-alexandria text-4xl pt-8">A bed for every adventure</div>
+    <div className="font-alexandria font-extralight text-3xl flex pt-6">Explore
+    <a
+                href="#search-section"
+                className="text-white pl-6 group-hover:animate-bounce transform transition-transform duration-300"
+                aria-label="Scroll to venues"
+              >
+                <svg
+                  className=" h-10 md:h-20"
+                  width="14"
+                  height="60"
+                  viewBox="0 0 16 71"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.2929 70.7071C7.68342 71.0976 8.31659 71.0976 8.70711 70.7071L15.0711 64.3431C15.4616 63.9526 15.4616 63.3195 15.0711 62.9289C14.6805 62.5384 14.0474 62.5384 13.6569 62.9289L8 68.5858L2.34315 62.9289C1.95262 62.5384 1.31946 62.5384 0.928935 62.9289C0.538411 63.3195 0.538411 63.9526 0.928935 64.3431L7.2929 70.7071ZM7 4.37114e-08L7 70L9 70L9 -4.37114e-08L7 4.37114e-08Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              </div>
   </div>
+  
 </section>
+
 
     </main>
   );
