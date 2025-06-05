@@ -7,13 +7,13 @@ function Holidaze({ language }) {
 
   return (
     <main className=" mx-8">
-     <section className="relative rounded-3xl rounded-tr-none overflow-hidden h-[800px] text-white">
+     <section className="relative rounded-3xl rounded-tr-none overflow-hidden min-h-[850px] text-white">
   {/* Bakgrunnsbilde med zoom */}
-  <div className="absolute inset-0 w-[100%] md:-translate-x-1/2 md:animate-float-x ">
+  <div className="absolute inset-0 w-[100%] lg:-translate-x-1/2 lg:animate-float-x ">
   <img
     src="/src/assets/images/holidazebanner.png"
     alt="Holidaze banner"
-    className="absolute inset-0 w-full h-full object-cover scale-[180%] md:scale-[165%] z-0 hover:[animation-play-state:paused]"
+    className="absolute inset-0 w-full h-full object-cover object-[center_25%] scale-[190%] md:scale-[160%] z-0"
   />
   </div>
 
@@ -23,7 +23,7 @@ function Holidaze({ language }) {
 
 
   {/* Tekstinnhold */}
-  <div className="relative z-10 px-6 md:px-20 py-16 max-w-4xl">
+  <div className="relative z-10 px-6 md:px-20 py-20 max-w-4xl">
     <h1 className=" font-logo text-[50px] text-white md:text-[60px] mb-6">
      Holidaze
     </h1>
@@ -70,7 +70,7 @@ function Holidaze({ language }) {
       </>
       )}
     </p>
-    <div className="font-alexandria text-4xl pt-8">A bed for every adventure</div>
+    <div className="font-alexandria text-4xl pt-20">A bed for every adventure</div>
     <div className="font-alexandria font-extralight text-3xl flex pt-6">Explore
     <a
                 href="#search-section"
