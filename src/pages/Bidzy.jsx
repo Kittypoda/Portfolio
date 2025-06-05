@@ -3,6 +3,7 @@ import bidzyBanner from "../assets/images/bidzybanner.png";
 import bidzyResponsive from "../assets/images/bidzyresponsive.png";
 import bidzySome from "../assets/images/bidzysome.png";
 import bidzyMobile from "../assets/images/bidzymobile.png";
+import { Link } from "react-router-dom";
 
 function Bidzy({ language }) {
   return (
@@ -87,6 +88,25 @@ function Bidzy({ language }) {
     </div>
   </div>
 </section>
+
+<section className="px-6 md:px-20 pt-8">
+<div className="font-baloo font-bold text-2xl pb-6 "> want to see more?
+</div>
+<div>
+  <Link to="/#">
+  <button className="mr-2 bg-[#6D8CDC] text-white w-32 font-baloo text-lg px-4 py-2 font-bold rounded-md">Webside</button>
+  </Link>
+  <Link to="/#">
+  <button className="bg-[#6D8CDC] text-white w-32 font-baloo text-lg px-4 py-2 font-bold rounded-md">Github</button>
+  </Link>
+  </div>
+</section>
+
+<div className="px-6 md:px-20 py-8">
+  <Link to="/work">
+    <button className="font-baloo font-bold underline text-black"> ← Go back to see more work</button>
+  </Link>
+</div>
 
 
     </main>

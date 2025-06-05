@@ -39,10 +39,6 @@
     @apply font-['Inter'] text-[16px] no-underline text-white;
   }
 
-  button {
-    @apply rounded-[22px] border border-black px-[35px] py-[15px] shadow-md bg-[rgba(217,217,217,0.01)] hover:bg-[rgba(0,0,0,0.10)];
-  }
-
   main {
     @apply min-h-screen;
   }
