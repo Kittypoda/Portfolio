@@ -7,21 +7,26 @@ function Holidaze({ language }) {
 
   return (
     <main className=" mx-8">
-      {/* Hero section with background image and overlay */}
-      <section
-  className="relative bg-cover bg-center bg-no-repeat text-white"
-  style={{ backgroundImage: "url('/src/assets/images/holidazebanner.png')" }}
->
+     <section className="relative rounded-3xl rounded-tr-none overflow-hidden h-[900px] text-white">
+  {/* Bakgrunnsbilde med zoom */}
+  <img
+    src="/src/assets/images/holidazebanner.png"
+    alt="Holidaze banner"
+    className="absolute inset-0 w-full h-full object-cover scale-[180%] md:scale-[165%] z-0"
+  />
+
   {/* Overlay */}
-  <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+  <div className="absolute inset-0 bg-overlaygreen bg-opacity-50 z-10"></div>
+ 
+
 
   {/* Tekstinnhold */}
   <div className="relative z-10 px-6 md:px-20 py-16 max-w-4xl">
-    <h1 className=" font-logo text-[30px] text-white md:text-[60px] mb-6">
+    <h1 className=" font-logo text-[50px] text-white md:text-[60px] mb-6">
      Holidaze
     </h1>
 
-    <p className="font-alexandria font-extralight text-sm">
+    <p className="font-alexandria font-extralight text-xs lg:text-sm">
       {language === "no" ? (
         <>
         Holidaze is a digital booking universe designed to make it easy, inspiring, and intuitive to discover – or offer – unique places to stay.
