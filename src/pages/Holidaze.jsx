@@ -9,7 +9,7 @@ function Holidaze({ language }) {
   const [copied, setCopied] = useState(false);
 
   return (
-    <main className=" mx-8">
+    <main className=" mx-4 md:mx-8">
       <section className="relative rounded-3xl rounded-tr-none overflow-hidden min-h-[850px] text-white">
         {/* Bakgrunnsbilde med zoom */}
         <div className="absolute inset-0 w-[100%] lg:-translate-x-1/2 lg:animate-float-x ">
@@ -180,7 +180,7 @@ function Holidaze({ language }) {
           )}
         </p>
       </section>
-      <section className="bg-[#CED6D5] py-6 md:py-20 rounded-3xl">
+      <section className="bg-[#CED6D5] py-10 md:py-20 rounded-3xl">
         <div>
           <img
             src={holidazeUi}
