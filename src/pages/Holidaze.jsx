@@ -63,9 +63,7 @@ function Holidaze({ language }) {
                 indication of available and booked dates.
                 <br />
                 <br />
-                The design is clean, modern, and inspired by nature, calm, and
-                clarity – aiming to give users a sense of control, trust, and
-                curiosity.
+                The design is clean and modern, with inspiration from movement, lightness, and a sense of exploration. The goal is to make the experience feel clear, engaging, and easy to navigate.
                 <br />
                 <br />I focused on accessibility, responsive layouts, and a
                 component-based structure that is easy to scale. This project
@@ -102,9 +100,7 @@ function Holidaze({ language }) {
                 , med tydelig visuell markering av ledige og opptatte datoer.
                 <br />
                 <br />
-                Designet er rent, moderne og inspirert av natur, ro og
-                oversiktlighet – med mål om å gi brukeren en følelse av
-                kontroll, tillit og lyst til å utforske.
+                Designet er rent og moderne, inspirert av bevegelse, letthet og nysgjerrighet. Målet er å gjøre opplevelsen tydelig, engasjerende og enkel å bruke.
                 <br />
                 <br />
                 Jeg har jobbet bevisst med tilgjengelighet, responsive
