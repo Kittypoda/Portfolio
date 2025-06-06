@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import holidazeBanner from "../assets/images/holidazebanner.png";
+import holidazeDesktop from "../assets/images/holdazedesktop.png";
 
 function Holidaze({ language }) {
   const [copied, setCopied] = useState(false);
@@ -11,14 +12,14 @@ function Holidaze({ language }) {
   {/* Bakgrunnsbilde med zoom */}
   <div className="absolute inset-0 w-[100%] lg:-translate-x-1/2 lg:animate-float-x ">
   <img
-    src="/src/assets/images/holidazebanner.png"
+    src={holidazeBanner}
     alt="Holidaze banner"
     className="absolute inset-0 w-full h-full object-cover object-[center_25%] scale-[190%] md:scale-[160%] z-0"
   />
   </div>
 
   {/* Overlay */}
-  <div className="absolute inset-0 bg-overlaygreen bg-opacity-75 z-10"></div>
+  <div className="absolute inset-0 bg-overlaygreen bg-opacity-50 z-10"></div>
  
 
 
@@ -28,7 +29,7 @@ function Holidaze({ language }) {
      Holidaze
     </h1>
 
-    <p className="font-alexandria font-extralight text-xs lg:text-sm">
+    <p className="font-alexandria font-extralight text-xs [text-shadow:1px_1px_3px_rgba(0,0,0,0.6)] lg:text-sm">
       {language === "no" ? (
         <>
         Holidaze is a digital booking universe designed to make it easy, inspiring, and intuitive to discover – or offer – unique places to stay.
@@ -92,8 +93,30 @@ function Holidaze({ language }) {
                 </svg>
               </a>
               </div>
+  </div>  
+</section>
+<section className="bg-blackish my-6 rounded-3xl flex flex-col">
+  <h1 className=" pt-6 md:pt-20 pb-10 px-6 md:px-20 text-white font-alexandria font-light">Resposiveness</h1>
+  <div>
+  <img
+    src={holidazeDesktop}
+    alt="Holidaze desktop"
+    className="max-w-[1250px] w-full h-auto mx-auto px-6 md:px-20"></img>
   </div>
-  
+  <p className="font-alexandria font-extralight text-xs max-w-[800px] pt-6 pb-12 lg:text-sm px-6 md:px-20">
+      {language === "no" ? (
+        <>
+        Holidaze is built with a mobile-first approach and adapts seamlessly to different screen sizes.
+        Layout, navigation, and interactions are optimized to provide a smooth experience across mobile, tablet, and desktop.
+      </>
+      
+      ) : (
+        <>
+       Holidaze er designet med et mobil-først-prinsipp og tilpasser seg sømløst til ulike skjermstørrelser.
+        Både layout, navigasjon og interaksjoner er optimalisert for å gi en god opplevelse på mobil, nettbrett og desktop.
+      </>
+      )}
+    </p>
 </section>
 
 
