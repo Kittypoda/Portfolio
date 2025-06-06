@@ -15,12 +15,12 @@ function Holidaze({ language }) {
   <img
     src={holidazeBanner}
     alt="Holidaze banner"
-    className="absolute inset-0 w-full h-full object-cover object-[center_25%] scale-[190%] md:scale-[160%] z-0"
+    className="absolute inset-0 w-full h-full object-cover object-[center_25%] hidden md:block scale-[190%] md:scale-[160%] z-0"
   />
   </div>
 
   {/* Overlay */}
-  <div className="absolute inset-0 bg-overlaygreen bg-opacity-50 z-10"></div>
+  <div className="absolute inset-0 bg-[#5C797E] md:bg-overlaygreen md:bg-opacity-50 z-10"></div>
  
 
 
@@ -30,7 +30,7 @@ function Holidaze({ language }) {
      Holidaze
     </h1>
 
-    <p className="font-alexandria font-extralight text-xs [text-shadow:1px_1px_3px_rgba(0,0,0,0.6)] lg:text-sm">
+    <p className="font-alexandria font-extralight text-xs [text-shadow:1px_1px_3px_rgba(0,0,0,0.2)] lg:text-sm">
       {language === "no" ? (
         <>
         Holidaze is a digital booking universe designed to make it easy, inspiring, and intuitive to discover – or offer – unique places to stay.
