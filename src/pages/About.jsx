@@ -20,7 +20,7 @@ function About({ language }) {
   </p>
           <p className="mb-4">
             Jeg liker å utvikle visuelle opplevelser som både <em>føles</em> riktige og <em>fungerer</em> godt.  
-            Med interesse for struktur, estetikk og detaljer forsøker jeg å lage løsninger som er rene, inspirerende og enkle å bruke – gjerne med et snev av lekenhet eller personlighet.  
+            Med interesse for estetikk og detaljer forsøker jeg å lage løsninger som er rene, inspirerende og enkle å bruke – gjerne med et snev av lekenhet eller personlighet.  
             Jeg er fortsatt i utvikling, men elsker å jobbe i det spenningsfeltet der design møter funksjon.
           </p>
           
@@ -36,7 +36,7 @@ function About({ language }) {
             </p>
             <p className="mb-4">
               I enjoy creating visual experiences that both <em>feel</em> right and <em>function</em> well.  
-              With an interest in structure, aesthetics, and detail, I aim to build solutions that are clean, inspiring, and easy to use – often with a touch of playfulness or personality.  
+              With an interest in aesthetics, and detail, I aim to build solutions that are clean, inspiring, and easy to use – often with a touch of playfulness or personality.  
               I’m still learning and growing, but I love working in the space where design meets functionality.
             </p>
             <p>
