@@ -24,6 +24,7 @@ export default {
       },
       animation: {
         'float-x': 'float-x 10s ease-in-out infinite',
+        'slow-bounce': 'bounce 2s infinite',
       },
     },
   },
