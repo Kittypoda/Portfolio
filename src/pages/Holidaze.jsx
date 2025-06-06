@@ -4,6 +4,9 @@ import holidazeBanner from "../assets/images/holidazebanner.png";
 import holidazeDesktop from "../assets/images/holdazedesktop.png";
 import holidazeMobile from "../assets/images/holidazemobile.png";
 import holidazeUi from "../assets/images/holidazeui.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Holidaze({ language }) {
   const [copied, setCopied] = useState(false);
@@ -180,7 +183,7 @@ function Holidaze({ language }) {
           )}
         </p>
       </section>
-      <section className="bg-[#CED6D5] py-10 md:py-20 rounded-3xl">
+      <section className="bg-[#CED6D5] py-20 rounded-3xl">
         <div>
           <img
             src={holidazeUi}
@@ -220,6 +223,55 @@ function Holidaze({ language }) {
           )}
         </p>
       </section>
+
+      <section className="bg-[#EEEDEB] py-10 my-6 rounded-3xl">
+        <div className="font-alexandria font-light text-2xl px-2 md:px-20 pt-8">
+          {language === "no" ? "Want to see more?" : "Vil du se mer?"}
+        </div>
+        <div className="text-2xl px-2 md:px-20 pt-6">
+          <a href="https://holiholidaze.netlify.app" target="_blank" rel="noopener noreferrer">
+            <button className="mr-4 px-10 md:py-3 py-3 rounded-md font-alexandria text-xs md:text-sm text-white shadow-lg transition bg-dustygreen hover:bg-mintgreen hover:text-blackish">
+              Webside
+            </button>
+          </a>
+          <a href="https://github.com/Kittypoda/Project-Exam-2" target="_blank" rel="noopener noreferrer">
+            <button className="px-10 md:py-3 py-3 rounded-md font-alexandria text-xs md:text-sm text-white shadow-lg transition bg-dustygreen hover:bg-mintgreen hover:text-blackish">
+              Github
+            </button>
+          </a>
+        </div>
+      
+
+      <div className="px-6 md:px-20 py-8">
+        <Link to="/work">
+          <button className="font-alexandria underline text-black">
+            {language === "no" ? "← Go back to see more work" : "← Tilbake til prosjektene"}
+          </button>
+        </Link>
+      </div>
+
+      {/* Share button */}
+      <div className="px-6 md:px-20">
+            <button
+              onClick={() => {
+                navigator.clipboard.writeText(window.location.href);
+                setCopied(true);
+                setTimeout(() => setCopied(false), 2000);
+              }}
+              className="text-black font-alexandria font-light text-md"
+            > 
+            <FontAwesomeIcon icon={faLink} />
+               {language === "no" ? "Copy link" : "Kopier lenke"}
+               
+            </button>
+          </div>
+
+          {copied && (
+            <p className=" font-alexandria text-black text-sm px-6 md:px-20">
+              {language === "no" ? "Link copied!" : "Lenke kopiert!"}
+            </p>
+          )}
+          </section>
     </main>
   );
 }
