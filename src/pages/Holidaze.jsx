@@ -63,7 +63,7 @@ function Holidaze({ language }) {
                 indication of available and booked dates.
                 <br />
                 <br />
-                The design is clean and modern, with inspiration from movement, lightness, and a sense of exploration. The goal is to make the experience feel clear, engaging, and easy to navigate.
+                The design is clean and modern, with inspiration from movement, lightness, and adventure. The goal is to make the experience feel clear, engaging, and easy to navigate.
                 <br />
                 <br />I focused on accessibility, responsive layouts, and a
                 component-based structure that is easy to scale. This project
@@ -100,7 +100,7 @@ function Holidaze({ language }) {
                 , med tydelig visuell markering av ledige og opptatte datoer.
                 <br />
                 <br />
-                Designet er rent og moderne, inspirert av bevegelse, letthet og nysgjerrighet. Målet er å gjøre opplevelsen tydelig, engasjerende og enkel å bruke.
+                Designet er rent og moderne, inspirert av bevegelse, letthet og oppdagelse. Målet er å gjøre opplevelsen tydelig, engasjerende og enkel å bruke.
                 <br />
                 <br />
                 Jeg har jobbet bevisst med tilgjengelighet, responsive
@@ -115,7 +115,7 @@ function Holidaze({ language }) {
           <div className="font-alexandria text-4xl pt-20">
             A bed for every adventure
           </div>
-          <div className="font-alexandria font-extralight text-3xl flex pt-6 items-center">
+          <div className="font-alexandria font-extralight text-4xl flex items-center">
             Explore
             <div className="group pl-6">
               <a
@@ -143,7 +143,7 @@ function Holidaze({ language }) {
       </section>
       <section id="resposiveness-section" className="bg-blackish my-6 rounded-3xl flex flex-col"
       >
-        <h1 className=" pt-6 md:pt-20 pb-10 px-6 md:px-20 text-white font-alexandria font-light">
+        <h1 className=" pt-8 md:pt-20 pb-10 px-6 md:px-20 text-white text-4xl font-alexandria font-light">
           Resposiveness
         </h1>
         <div>
