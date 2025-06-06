@@ -22,7 +22,7 @@ function Levelup({ language }) {
 
         <div className="flex justify-center pb-20">
           <a
-            href="https://holiholidaze.netlify.app"
+            href="https://github.com/Kittypoda/Js-frameworks-LevelupLounge"
             target="_blank"
             rel="noopener noreferrer"
           >
