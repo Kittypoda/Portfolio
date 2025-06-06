@@ -22,23 +22,25 @@ function Slider({ language }) {
   
 
   return (
-    <section className="slider fixed  bottom-16 md:bottom-32 left-1/2 transform -translate-x-1/2 z-20">
-      <input
-        type="checkbox"
-        id="workToggle"
-        className="slider-checkbox"
-        checked={checked}
-        onChange={handleToggle}
-      />
-      <label htmlFor="workToggle" className="slider-label  border border-[#E2C5D0] bg-[#D1AABA]">
-        <span className={`slider-text ${checked ? 'opacity-0' : 'opacity-100'}`}>
-          {language === "no" ? "My Work" : "Prosjekter"}
-        </span>
-        <span className={`slider-text about ${checked ? 'opacity-100' : 'opacity-0'}`}>
-          {language === "no" ? "About" : "Om meg"}
-        </span>
-      </label>
-    </section>
+    <section className="slider flex justify-center mt-10 md:mt-0 md:fixed md:bottom-32 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
+    <input
+      type="checkbox"
+      id="workToggle"
+      className="slider-checkbox"
+      checked={checked}
+      onChange={handleToggle}
+    />
+    <label htmlFor="workToggle" className="slider-label border border-[#E2C5D0] bg-[#D1AABA]">
+      <span className={`slider-text ${checked ? 'opacity-0' : 'opacity-100'}`}>
+        {language === "no" ? "My Work" : "Prosjekter"}
+      </span>
+      <span className={`slider-text about ${checked ? 'opacity-100' : 'opacity-0'}`}>
+        {language === "no" ? "About" : "Om meg"}
+      </span>
+    </label>
+  </section>
+  
+
   );
 }
 
