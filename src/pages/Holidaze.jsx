@@ -9,7 +9,7 @@ function Holidaze({ language }) {
   const [copied, setCopied] = useState(false);
 
   return (
-    <main className=" mx-4 md:mx-8">
+    <main className=" mx-2 md:mx-8">
       <section className="relative rounded-3xl rounded-tr-none overflow-hidden min-h-[850px] text-white">
         {/* Bakgrunnsbilde med zoom */}
         <div className="absolute inset-0 w-[100%] lg:-translate-x-1/2 lg:animate-float-x ">
@@ -29,7 +29,7 @@ function Holidaze({ language }) {
             Holidaze
           </h1>
 
-          <p className="font-alexandria font-extralight text-xs [text-shadow:1px_1px_3px_rgba(0,0,0,0.2)] lg:text-sm">
+          <p className="font-alexandria font-extralight text-xs md:[text-shadow:1px_1px_3px_rgba(0,0,0,0.2)] lg:text-sm">
             {language === "no" ? (
               <>
                 Holidaze is a digital booking universe designed to make it easy,
