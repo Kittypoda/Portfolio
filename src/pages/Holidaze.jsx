@@ -32,7 +32,7 @@ function Holidaze({ language }) {
             Holidaze
           </h1>
 
-          <p className="font-alexandria font-extralight text-xs md:[text-shadow:1px_1px_3px_rgba(0,0,0,0.2)] lg:text-sm">
+          <p className="font-alexandria font-extralight text-sm md:[text-shadow:1px_1px_3px_rgba(0,0,0,0.2)]">
             {language === "no" ? (
               <>
                 Holidaze is a digital booking universe designed to make it easy,
@@ -165,7 +165,7 @@ function Holidaze({ language }) {
             className="max-w-[1250px] w-full h-auto mx-auto block md:hidden px-6 md:px-20"
           ></img>
         </div>
-        <p className="font-alexandria font-extralight text-xs max-w-[800px] pt-6 pb-12  lg:text-sm px-6 md:px-20">
+        <p className="font-alexandria font-extralight max-w-[800px] pt-6 pb-12  text-sm px-6 md:px-20">
           {language === "no" ? (
             <>
               Holidaze is built with a mobile-first approach and adapts
@@ -196,7 +196,7 @@ function Holidaze({ language }) {
             Clarity & comfort
           </h1>
         </div>
-        <p className="font-alexandria text-black font-extralight text-xs max-w-[800px] pt-6 pb-6  lg:text-sm px-6 md:px-20">
+        <p className="font-alexandria text-black font-extralight max-w-[800px] pt-6 pb-6 text-sm px-6 md:px-20">
           {language === "no" ? (
             <>
               In Holidaze, I focused on creating a user experience that feels

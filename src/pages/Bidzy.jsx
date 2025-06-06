@@ -84,7 +84,7 @@ function Bidzy({ language }) {
               alt="desktop and mobile"
               className="w-full h-auto pt-6"
             />
-            <p className="font-baloo text-black pt-4 pr-20 text-md md:text-lg">
+            <p className="font-baloo text-black pt-4 md:pr-20 text-md md:text-lg">
               {language === "en" ? (
                 <>
                   Bidzy er designet for å fungere sømløst på både mobil, nettbrett og desktop.
