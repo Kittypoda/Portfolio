@@ -119,9 +119,9 @@ function Holidaze({ language }) {
             Explore
             <div className="group pl-6">
               <a
-                href="#search-section"
+                href="#resposiveness-section"
                 className="text-white"
-                aria-label="Scroll to venues"
+                aria-label="Scroll to section"
               >
                 <svg
                   className=" pt-12 h-32 animate-slow-bounce md:animate-none md:group-hover:animate-bounce transform transition-transform"
@@ -141,9 +141,7 @@ function Holidaze({ language }) {
           </div>
         </div>
       </section>
-      <section
-        id="#search-section"
-        className="bg-blackish my-6 rounded-3xl flex flex-col"
+      <section id="resposiveness-section" className="bg-blackish my-6 rounded-3xl flex flex-col"
       >
         <h1 className=" pt-6 md:pt-20 pb-10 px-6 md:px-20 text-white font-alexandria font-light">
           Resposiveness
