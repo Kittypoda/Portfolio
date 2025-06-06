@@ -22,7 +22,7 @@ function Slider({ language }) {
   
 
   return (
-    <section className="slider fixed bottom-32 left-1/2 transform -translate-x-1/2 z-20">
+    <section className="slider fixed  bottom-16 md:bottom-32 left-1/2 transform -translate-x-1/2 z-20">
       <input
         type="checkbox"
         id="workToggle"
