@@ -225,10 +225,10 @@ function Holidaze({ language }) {
       </section>
 
       <section className="bg-[#EEEDEB] py-10 my-6 rounded-3xl">
-        <div className="font-alexandria font-light text-2xl px-2 md:px-20 pt-8">
+        <div className="font-alexandria font-light text-2xl px-6 md:px-20 pt-8">
           {language === "no" ? "Want to see more?" : "Vil du se mer?"}
         </div>
-        <div className="text-2xl px-2 md:px-20 pt-6">
+        <div className="text-2xl px-6 md:px-20 pt-6">
           <a href="https://holiholidaze.netlify.app" target="_blank" rel="noopener noreferrer">
             <button className="mr-4 px-10 md:py-3 py-3 rounded-md font-alexandria text-xs md:text-sm text-white shadow-lg transition bg-dustygreen hover:bg-mintgreen hover:text-blackish">
               Webside
