@@ -19,13 +19,6 @@
   }
   
 
-
-
-
-  h1 {
-    @apply font-['Bakbak_One'] font-normal text-[31px] text-black m-0 md:text-[51px];
-  }
-
   h2 {
     @apply font-['Inter'] font-light text-[20px] text-black;
   }

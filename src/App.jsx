@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Work from "./pages/Work";
 import Holidaze from "./pages/Holidaze";
 import Bidzy from "./pages/Bidzy";
+import Levelup from "./pages/Levelup";
 import Slider from "./components/Slider";
 import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
@@ -49,6 +50,14 @@ function App() {
             element={
               <>
                 <Holidaze language={language} />
+              </>
+            }
+          />
+          <Route
+            path="/leveluplounge"
+            element={
+              <>
+                <Levelup language={language} />
               </>
             }
           />
