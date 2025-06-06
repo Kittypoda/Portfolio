@@ -185,11 +185,11 @@ function Holidaze({ language }) {
           <img
             src={holidazeUi}
             alt="Holidaze desktop"
-            className="max-w-[950px] w-full h-auto mx-auto px-6 md:px-20"
+            className="max-w-[950px] w-full h-auto mx-auto px-2 md:px-6 md:px-20"
           ></img>
         </div>
         <div>
-          <h1 className=" px-6 md:px-20 font-alexandria text-3xl">
+          <h1 className=" pt-6 md:pt-0 px-6 md:px-20 font-alexandria text-3xl">
             Clarity & comfort
           </h1>
         </div>
