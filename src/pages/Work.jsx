@@ -26,8 +26,8 @@ function Work({ language }) {
   };
 
   const cards = [
-    { src: bidzycard, alt: "Bidzy", link: "/bidzy" },
     { src: holidazecard, alt: "Holidaze", link: "/holidaze" },
+    { src: bidzycard, alt: "Bidzy", link: "/bidzy" },
     { src: lvlcard, alt: "Level Up", link: "/levelup" },
   ];
 
