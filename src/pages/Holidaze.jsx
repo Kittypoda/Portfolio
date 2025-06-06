@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import holidazeBanner from "../assets/images/holidazebanner.png";
 import holidazeDesktop from "../assets/images/holdazedesktop.png";
+import holidazeMobile from "../assets/images/holidazemobile.png";
 
 function Holidaze({ language }) {
   const [copied, setCopied] = useState(false);
@@ -101,9 +102,14 @@ function Holidaze({ language }) {
   <img
     src={holidazeDesktop}
     alt="Holidaze desktop"
-    className="max-w-[1250px] w-full h-auto mx-auto px-6 md:px-20"></img>
-  </div>
-  <p className="font-alexandria font-extralight text-xs max-w-[800px] pt-6 pb-12 lg:text-sm px-6 md:px-20">
+    className="max-w-[1250px] w-full h-auto mx-auto md:block hidden px-6 md:px-20"></img>
+  
+  <img
+    src={holidazeMobile}
+    alt="Holidaze desktop"
+    className="max-w-[1250px] w-full h-auto mx-auto block md:hidden px-6 md:px-20"></img>
+    </div>
+  <p className="font-alexandria font-extralight text-xs max-w-[800px] pt-6 pb-12  lg:text-sm px-6 md:px-20">
       {language === "no" ? (
         <>
         Holidaze is built with a mobile-first approach and adapts seamlessly to different screen sizes.
