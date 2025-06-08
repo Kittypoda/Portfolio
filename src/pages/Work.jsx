@@ -75,7 +75,7 @@ function Work({ language }) {
                 {card.description[language]}{" "}
                 <Link
                   to={card.link}
-                  className=" underline hover:text-white"
+                  className=" underline whitespace-nowrap"
                 >
                   {language === "en" ? "Les mer" : "Read more"}
                 </Link>
@@ -101,11 +101,11 @@ function Work({ language }) {
                 />
               </div>
             </Link>
-            <p className="text-white mt-4 px-2 whitespace-nowrap">
+            <p className="text-white mt-4 px-2">
               {card.description[language]}{" "}
               <Link
                 to={card.link}
-                className=" underline"
+                className=" underline whitespace-nowrap"
               >
                 {language === "en" ? "Les mer" : "Read more"}
               </Link>
