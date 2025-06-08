@@ -179,6 +179,8 @@ function Bidzy({ language }) {
             {language === "no" ? "← Go back to see more work" : "← Tilbake til prosjektene"}
           </button>
         </Link>
+        <p className="text-gray-600 text-sm pt-4">Icons from <Link className="text-gray-600 text-sm underline" to="https://icons8.com/">Icons8</Link></p>
+        
       </div>
 
       {/* Share button */}

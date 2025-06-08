@@ -41,7 +41,7 @@ function Work({ language }) {
       link: "/bidzy",
       description: {
         no: "A modern auction house for lovers of secondhand gems.",
-        en: "Et moderne auksjonshus for deg som elsker gjenbruk. Bidzy gjør det enkelt (og litt gøy) å kjøpe og selge unike skatter.",
+        en: "Et moderne auksjonshus for deg som elsker gjenbruk.",
       },
     },
     {

@@ -45,11 +45,11 @@
   }
 
   .footer-links {
-    @apply flex items-center gap-[10px] justify-center md:justify-end;
+    @apply flex items-center gap-[10px] justify-end;
   }
 
   footer a {
-    @apply px-[10px] mr-[20px] font-extralight text-[16px];
+    @apply px-[4px] mr-4  font-extralight text-[16px];
   }
 
   body.fade-out {
