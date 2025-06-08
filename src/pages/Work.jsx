@@ -101,11 +101,11 @@ function Work({ language }) {
                 />
               </div>
             </Link>
-            <p className="text-white mt-4 px-2">
+            <p className="text-white mt-4 px-2 whitespace-nowrap">
               {card.description[language]}{" "}
               <Link
                 to={card.link}
-                className=" underline whitespace-nowrap"
+                className=" underline"
               >
                 {language === "en" ? "Les mer" : "Read more"}
               </Link>
