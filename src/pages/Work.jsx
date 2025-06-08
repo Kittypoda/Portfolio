@@ -31,8 +31,8 @@ function Work({ language }) {
       alt: "Holidaze",
       link: "/holidaze",
       description: {
-        no: "Find your next adventure! A complete booking platform with the user in focus",
-        en: "Finn neste eventyr! En komplett bookingplattform med brukeren i sentrum",
+        no: "Find your next adventure! A booking platform with the user in focus",
+        en: "Finn neste eventyr! En bookingplattform med brukeren i sentrum",
       },
     },
     {

@@ -39,7 +39,7 @@
     @apply min-h-screen;
   }
   footer {
-    @apply sticky bottom-0 w-full h-[50px];
+    @apply bottom-0 w-full h-[50px];
   }
 
   }

@@ -13,16 +13,15 @@ function Slider({ language }) {
   const handleToggle = () => {
     setChecked(!checked);
   
-    // Vent med navigering til animasjonen har spilt (300-400ms)
     setTimeout(() => {
       const newPath = checked ? "/" : "/work";
       navigate(newPath);
-    }, 400); // Juster etter overgangstiden i CSS
+    }, 400); 
   };
   
 
   return (
-    <section className="slider flex justify-center pb-12 mt-10 md:mt-0 md:fixed md:bottom-32 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
+    <section className="slider flex justify-center pb-12 mt-10 md:mt-0 md:fixed md:bottom-24 md:left-1/2 md:transform md:-translate-x-1/2 z-20">
     <input
       type="checkbox"
       id="workToggle"
