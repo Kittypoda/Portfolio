@@ -71,7 +71,7 @@ function Work({ language }) {
                   />
                 </div>
               </Link>
-              <p className="text-white text-center my-4 px-6">
+              <p className="text-white text-center px-6">
                 {card.description[language]}{" "}
                 <Link
                   to={card.link}
