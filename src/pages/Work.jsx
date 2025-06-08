@@ -21,7 +21,7 @@ function Work({ language }) {
       </div>
     ),
     customPaging: () => (
-      <div className="w-4 h-4 rounded-full bg-white hover:bg-[#FFF2D7] transition" />
+      <div className=" w-4 h-4 rounded-full bg-white hover:bg-[#FFF2D7] transition" />
     ),
   };
 
@@ -31,8 +31,8 @@ function Work({ language }) {
       alt: "Holidaze",
       link: "/holidaze",
       description: {
-        no: "Airbnb-lignende plattform for booking og vertskap.",
-        en: "Airbnb-style platform for booking and hosting.",
+        no: "Find your next adventure! A complete booking platform with the user in focus",
+        en: "Finn neste eventyr! En komplett bookingplattform med brukeren i sentrum",
       },
     },
     {
@@ -40,8 +40,8 @@ function Work({ language }) {
       alt: "Bidzy",
       link: "/bidzy",
       description: {
-        no: "Auksjonsside hvor brukere kan kjøpe og selge brukt.",
-        en: "Auction site where users can buy and sell second-hand items.",
+        no: "A modern auction house for lovers of secondhand gems.",
+        en: "Et moderne auksjonshus for deg som elsker gjenbruk. Bidzy gjør det enkelt (og litt gøy) å kjøpe og selge unike skatter.",
       },
     },
     {
@@ -49,8 +49,8 @@ function Work({ language }) {
       alt: "Level Up",
       link: "/leveluplounge",
       description: {
-        no: "Nettside for gaming lounge med arrangement og booking.",
-        en: "Website for a gaming lounge with events and booking.",
+        no: "Discover, read, and collect your favorite games in one place.",
+        en: "Finn, les om og samle dine favorittspill på ett sted.",
       },
     },
   ];
@@ -71,13 +71,13 @@ function Work({ language }) {
                   />
                 </div>
               </Link>
-              <p className="text-white text-center mt-4 px-6">
+              <p className="text-white text-center my-4 px-6">
                 {card.description[language]}{" "}
                 <Link
                   to={card.link}
-                  className="text-[#FFF2D7] underline hover:text-white"
+                  className=" underline hover:text-white"
                 >
-                  {language === "no" ? "Les mer" : "Read more"}
+                  {language === "en" ? "Les mer" : "Read more"}
                 </Link>
               </p>
             </div>
@@ -107,7 +107,7 @@ function Work({ language }) {
                 to={card.link}
                 className=" underline hover:text-white"
               >
-                {language === "no" ? "Les mer" : "Read more"}
+                {language === "en" ? "Les mer" : "Read more"}
               </Link>
             </p>
           </div>
