@@ -21,7 +21,7 @@ function Work({ language }) {
       </div>
     ),
     customPaging: () => (
-      <div className=" w-4 h-4 rounded-full bg-white hover:bg-[#FFF2D7] transition" />
+      <div className=" w-4 h-4 rounded-full bg-white hover:bg-[#9A0D0F]transition" />
     ),
   };
 
@@ -71,11 +71,11 @@ function Work({ language }) {
                   />
                 </div>
               </Link>
-              <p className="text-white text-center mt-2 px-6">
+              <p className="text-[#9A0D0F] text-center mt-2 px-6">
                 {card.description[language]}{" "}
                 <Link
                   to={card.link}
-                  className=" underline whitespace-nowrap"
+                  className=" underline whitespace-nowrap text-[#9A0D0F]"
                 >
                   {language === "en" ? "Les mer" : "Read more"}
                 </Link>
@@ -101,11 +101,11 @@ function Work({ language }) {
                 />
               </div>
             </Link>
-            <p className="text-white mt-4 px-2">
+            <p className="text-[#9A0D0F] text-center mt-4 px-2">
               {card.description[language]}{" "}
               <Link
                 to={card.link}
-                className=" underline whitespace-nowrap"
+                className=" underline text-[#9A0D0F] whitespace-nowrap"
               >
                 {language === "en" ? "Les mer" : "Read more"}
               </Link>

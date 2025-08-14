@@ -30,16 +30,16 @@ function About({ language }) {
           </>
         ) : (
           <>
-            <p className="mb-4">
+            <p className="mb-4 text-[#8D130A]">
             Hi! I’m Oda, and I work at the intersection of graphic design and front-end development.<br></br> I live in a small pink house by a Norwegian fjord – surrounded by forest, flowers, and creative energy.
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-[#8D130A]">
               I enjoy creating visual experiences that both <em>feel</em> right and <em>function</em> well.  
               With an interest in aesthetics, and detail, I aim to build solutions that are clean, inspiring, and easy to use – Preferably with a detail that adds a bit of edge or surprise.  
             </p>
-            <p>
+            <p className='text-[#8D130A]'>
               Feel free to reach out at{" "}
-              <a href="mailto:odakrolstad@gmail.com">odakrolstad@gmail.com</a>.
+              <a className='text-[#8D130A]' href="mailto:odakrolstad@gmail.com">odakrolstad@gmail.com</a>.
             </p>
           </>
         )}

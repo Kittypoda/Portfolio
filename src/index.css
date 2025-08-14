@@ -51,7 +51,7 @@
   }
 
   footer a {
-    @apply px-[4px] mr-4  font-extralight text-[16px];
+    @apply px-[4px] mr-4  font-light text-[16px];
   }
 
   body.fade-out {
