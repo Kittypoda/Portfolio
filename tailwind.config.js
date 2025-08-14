@@ -3,10 +3,18 @@ export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     extend: {
+
+      boxShadow: {
+        solid: '15px 15px 0 #292929',
+        btnsolid: '10px 10px 0 #292929',
+      },
+      
       fontFamily: {
         baloo: ['"Baloo 2"', 'cursive'],
         logo: ['"Racing Sans One"', 'sans-serif'],
         alexandria: ['"Alexandria", sans-serif'],
+        press: ['"Press Start 2P"', 'system-ui'],
+        jura: ['Jura', 'sans-serif'],
       },
       colors: {
         dustygreen: '#76A79F',
