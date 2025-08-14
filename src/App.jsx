@@ -24,7 +24,7 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  const hideHeader = location.pathname === "/leveluplounge";
+  const isLevelLanding = location.pathname === "/leveluplounge";
 
   return (
     <>
@@ -32,7 +32,7 @@ function App() {
         <Loader />
       ) : (
         <div>
-          {!hideHeader && <Header setLanguage={setLanguage} />}
+          {!isLevelLanding && <Header setLanguage={setLanguage} />}
           <main>
             <Routes>
               <Route
@@ -51,7 +51,7 @@ function App() {
               <Route path="/leveluplounge" element={<LevelLanding />} />
             </Routes>
           </main>
-          <Footer />
+          {!isLevelLanding && <Footer />}
         </div>
       )}
     </>
@@ -59,6 +59,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
