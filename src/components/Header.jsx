@@ -24,7 +24,6 @@ function Header({ setLanguage }) {
     <h3>Oda Rolstad Verbeke</h3>
     <h3>2025</h3>
   
-    {/* Språkvelger med samme styling som slideren */}
     <div className="slider absolute top-1 right-0 mt-2 mr-2">
       <input
         type="checkbox"
@@ -33,7 +32,7 @@ function Header({ setLanguage }) {
         checked={isNorwegian}
         onChange={handleToggle}
       />
-      <label htmlFor="languageToggle" className="slider-label border-2 border-[FAF7EB]">
+      <label htmlFor="languageToggle" className="slider-label border border-[#FFE1E7]">
       <span className={`slider-text ${isNorwegian ? 'opacity-0' : 'opacity-100'}`}>
       English
     </span>

@@ -3,13 +3,13 @@
 }
 
 .slider-label {
-  @apply w-[170px] h-[54px] backdrop-blur-md rounded-full cursor-pointer relative flex items-center justify-center transition-all duration-300 shadow-md hover:bg-[rgba(255,255,255,0.3)] hover:shadow-lg;
+  @apply w-[170px] h-[54px] backdrop-blur-md rounded-full cursor-pointer relative flex items-center justify-center transition-all duration-300 shadow-md hover:bg-[#A72328] hover:shadow-lg;
 }
 
 .slider-label::before {
   content: '';
   @apply absolute top-[8px] left-[10px] w-[31px] h-[31px] rounded-full;
-  background-color: #FFF7E7;
+  background-color: #E28F99;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
   transform: translateX(0);
@@ -28,7 +28,7 @@
 }
 
 .slider-text {
-  @apply font-['Inter'] font-normal text-[14px] absolute top-1/2 left-1/2 p-[10px] -translate-x-1/2 -translate-y-1/2 transition-opacity text-white;
+  @apply font-['Inter'] font-light text-[14px] tracking-wider absolute top-1/2 left-1/2 p-[10px] -translate-x-1/2 -translate-y-1/2 transition-opacity text-white;
 }
 
 .slider-text.about {
