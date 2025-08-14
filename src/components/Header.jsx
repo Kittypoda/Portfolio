@@ -20,9 +20,9 @@ function Header({ setLanguage }) {
 
   return (
     <header className="relative flex flex-col m-[10px] md:p-3">
-    <h3>PORTFOLIO</h3>
-    <h3>Oda Rolstad Verbeke</h3>
-    <h3>2025</h3>
+    <h3 className="text-[#9A0D0F]">PORTFOLIO</h3>
+    <h3 className="text-[#9A0D0F]">Oda Rolstad Verbeke</h3>
+    <h3 className="text-[#9A0D0F]">2025</h3>
   
     <div className="slider absolute top-1 right-0 mt-2 mr-2">
       <input

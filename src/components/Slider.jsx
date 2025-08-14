@@ -29,7 +29,7 @@ function Slider({ language }) {
       checked={checked}
       onChange={handleToggle}
     />
-    <label htmlFor="workToggle" className="slider-label border border-[#B73229] bg-[#B63F43]">
+    <label htmlFor="workToggle" className="slider-label border border-[#B73229] bg-[#A72328]">
       <span className={`slider-text ${checked ? 'opacity-0' : 'opacity-100'}`}>
         {language === "no" ? "My Work" : "Prosjekter"}
       </span>
