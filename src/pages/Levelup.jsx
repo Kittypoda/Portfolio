@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import levelUpB from "../assets/images/lvlbanner.png";
 import levelUpV from "../assets/videos/lvlupgif-3.gif";
+import { Link } from "react-router-dom";
 
 function LoadingTitle() {
   const [dots, setDots] = useState("");
@@ -62,11 +63,11 @@ This project was created as part of the JavaScript Frameworks course at Noroff, 
         </section>
 
         <section>
-          <h1 className="font-press text-xl md:text-2xl text-[#F9EED6] text-center pt-20 md:pt-32">
-            Ready to see more?
+          <h1 className="font-press text-xl md:text-2xl text-[#F9EED6] text-center pb-10 pt-20 md:pt-32">
+          {language === "no" ? "Ready to see more?" : "Vil du se mer?"}
           </h1>
 
-          <div className="flex justify-center gap-6 pt-10 pb-40">
+          <div className="flex flex-wrap justify-center gap-6 pb-40 px-10">
             <a
               href="https://levellounge.netlify.app"
               target="_blank"
@@ -85,6 +86,11 @@ This project was created as part of the JavaScript Frameworks course at Noroff, 
                 Github
               </button>
             </a>
+            <Link to="/work">
+          <button className="mt-4 inline-block font-jura font-medium rounded border-2 border-[#7B558F] bg-[#D6B8BD] px-10 py-4  text-xl text-black shadow-btnsolid transition hover:bg-[#D6B8BD]">
+            {language === "no" ? " Or go back to see more work" : "Eller gå tilbake til prosjektene"}
+          </button>
+        </Link>
           </div>
         </section>
       </div>
