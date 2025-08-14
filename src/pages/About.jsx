@@ -1,4 +1,4 @@
-import odaImage from '../assets/images/odaoda.png';
+import odaImage from '../assets/images/oda.png';
 
 function About({ language }) {
   return (
@@ -7,25 +7,25 @@ function About({ language }) {
         <img
           src={odaImage}
           alt="Oda"
-          className="max-w-[700px] pt-10 px-8 content-center w-full h-auto block mx-auto"
+          className="max-w-[950px] pt-10 px-8 content-center w-full h-auto block mx-auto"
         />
       </section>
 
       <section className="flex flex-col items-center px-6 text-center mx-auto pt-12 max-w-[90%] md:max-w-[1250px]">
         {language === "en" ? (
           <>
-            <p className="mb-4">
+            <p className="mb-4 text-[#FFE1E7]">
             Hei! Jeg heter Oda og jobber i skjæringspunktet mellom grafisk design og front-end-utvikling. <br />
             Jeg bor i et lite rosa hus ved en norsk fjord – omgitt av skog, blomster og masse kreativt driv.
   </p>
-          <p className="mb-4">
+          <p className="mb-4 text-[#FFE1E7]">
             Jeg liker å utvikle visuelle opplevelser som både <em>føles</em> riktige og <em>fungerer</em> godt.  
             Med interesse for estetikk og detaljer forsøker jeg å lage løsninger som er rene, inspirerende og enkle å bruke – helst med et snev av lekenhet og personlighet.  
           </p>
           
-            <p>
+            <p className='text-[#FFE1E7]'>
               Har du spørsmål? Ta gjerne kontakt på{" "}
-              <a href="mailto:odakrolstad@gmail.com">odakrolstad@gmail.com</a>.
+              <a className='text-[#FFE1E7]' href="mailto:odakrolstad@gmail.com">odakrolstad@gmail.com</a>.
             </p>
           </>
         ) : (

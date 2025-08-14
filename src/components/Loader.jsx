@@ -1,4 +1,4 @@
-import odaImage from '../assets/images/odaoda.png';
+import odaImage from '../assets/images/oda.png';
 
 function Loader() {
   return (
