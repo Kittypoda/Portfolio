@@ -34,7 +34,7 @@ function Levelup({ language }) {
             alt="Level up Lounge animation"
             className="max-w-[750px] px-6 pb-8 w-full h-auto mx-auto pointer-events-none"
           />
-          <h1 className="font-press text-xl md:text-3xl text-[#F9EED6] text-center py-20">
+          <h1 className="font-press text-xl md:text-3xl text-[#F9EED6] text-center py-10 px-20">
             Ready to level up?
           </h1>
           <h2 className="text-[#F9EED6] text-center text-md font-jura px-10 md:px-40 lg:px-48 whitespace-pre-line">
