@@ -15,8 +15,7 @@ function About({ language }) {
         {language === "en" ? (
           <>
             <p className="mb-4 text-[#8D130A]">
-            Hei! Jeg heter Oda og jobber i skjæringspunktet mellom grafisk design og front-end-utvikling. <br />
-            Jeg bor i et lite rosa hus ved en norsk fjord – omgitt av skog, blomster og masse kreativt driv.
+            Hei! Jeg er Oda, og jeg trives best med å jobbe i skjæringspunktet mellom design og utvikling.
   </p>
           <p className="mb-4 text-[#8D130A]">
             Jeg liker å utvikle visuelle opplevelser som både <em>føles</em> riktige og <em>fungerer</em> godt.  
@@ -31,7 +30,7 @@ function About({ language }) {
         ) : (
           <>
             <p className="mb-4 text-[#8D130A]">
-            Hi! I’m Oda, and I work at the intersection of graphic design and front-end development.<br></br> I live in a small pink house by a Norwegian fjord – surrounded by forest, flowers, and creative energy.
+            Hi! I'm Oda, and I thrive working at the intersection of design and development.
             </p>
             <p className="mb-4 text-[#8D130A]">
               I enjoy creating visual experiences that both <em>feel</em> right and <em>function</em> well.  

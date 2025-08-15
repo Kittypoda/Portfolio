@@ -28,17 +28,26 @@ function Header({ setLanguage }) {
       <input
         type="checkbox"
         id="languageToggle"
-        className="slider-checkbox"
+        className="slider-checkbox hover:text-white"
         checked={isNorwegian}
         onChange={handleToggle}
       />
       <label htmlFor="languageToggle" className="slider-label border border-[#9A0D0F]">
-      <span className={`slider-text font-normal text-[#9A0D0F] hover:text-white ${isNorwegian ? 'opacity-0' : 'opacity-100'}`}>
-      English
-    </span>
-    <span className={`slider-text font-normal text-[#9A0D0F] hover:text-white about ${isNorwegian ? 'opacity-100' : 'opacity-0'}`}>
-      Norwegian
+      <span
+  className={`slider-text font-normal text-[#9A0D0F] hover:text-white ${
+    isNorwegian ? "hidden" : "block"
+  }`}
+>
+  English
 </span>
+<span
+  className={`slider-text font-normal text-[#9A0D0F] hover:text-white ${
+    isNorwegian ? "block" : "hidden"
+  }`}
+>
+  Norwegian
+</span>
+
 
       </label>
     </div>
