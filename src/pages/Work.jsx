@@ -2,6 +2,7 @@ import SlickSlider from "react-slick";
 import { Link } from "react-router-dom";
 import bidzycard from "../assets/images/bidzycard.png";
 import holidazecard from "../assets/images/holidazecard.png";
+import smltcard from "../assets/images/smltcard.png";
 import lvlcard from "../assets/images/lvlcard.png";
 import Slider from "../components/Slider";
 
@@ -53,6 +54,18 @@ function Work({ language }) {
   };
 
   const cards = [
+
+    {
+      src: smltcard,
+      alt: "Smlt",
+      link: "/smlt",
+      tags: ["design"],
+      description: {
+        no: "A modern auction house for lovers of secondhand gems.",
+        en: "Et moderne auksjonshus for deg som elsker gjenbruk.",
+      },
+    },
+
     {
       src: bidzycard,
       alt: "Bidzy",

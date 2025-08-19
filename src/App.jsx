@@ -6,6 +6,7 @@ import Work from "./pages/Work";
 import Holidaze from "./pages/Holidaze";
 import Bidzy from "./pages/Bidzy";
 import Levelup from "./pages/Levelup";
+import Smlt from "./pages/Smlt";
 import Slider from "./components/Slider";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
@@ -45,6 +46,7 @@ function App() {
                 }
               />
               <Route path="/work" element={<Work language={language} />} />
+              <Route path="/smlt" element={<Smlt language={language} />} />
               <Route path="/bidzy" element={<Bidzy language={language} />} />
               <Route path="/holidaze" element={<Holidaze language={language} />} />
               <Route path="/leveluplounge/details" element={<Levelup language={language} />} />
