@@ -6,13 +6,13 @@ import holidazeMobile from "../assets/images/holidazemobile.png";
 import holidazeUi from "../assets/images/holidazeui.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Holidaze({ language }) {
   const [copied, setCopied] = useState(false);
 
   return (
-    <main className=" mx-2 md:mx-8">
+    <main>
+      <div className="mx-2 md:mx-8">
       <section className="relative rounded-3xl rounded-tr-none overflow-hidden min-h-[850px] text-white">
         {/* Bakgrunnsbilde med zoom */}
         <div className="absolute inset-0 w-[100%] lg:-translate-x-1/2 lg:animate-float-x ">
@@ -243,29 +243,28 @@ function Holidaze({ language }) {
           </button>
         </Link>
       </div>
-
-      {/* Share button */}
-      <div className="px-6 md:px-20">
-            <button
-              onClick={() => {
-                navigator.clipboard.writeText(window.location.href);
-                setCopied(true);
-                setTimeout(() => setCopied(false), 2000);
-              }}
-              className="text-black font-alexandria font-light text-md"
-            > 
-            <FontAwesomeIcon icon={faLink} />
-               {language === "no" ? "Copy link" : "Kopier lenke"}
-               
-            </button>
-          </div>
-
-          {copied && (
-            <p className=" font-alexandria text-black text-sm px-6 md:px-20">
-              {language === "no" ? "Link copied!" : "Lenke kopiert!"}
-            </p>
-          )}
           </section>
+          </div>
+          {/* Share button */}
+          <div className="px-2 md:px-10 pt-4">
+        <button
+          onClick={() => {
+            navigator.clipboard.writeText(window.location.href);
+            setCopied(true);
+            setTimeout(() => setCopied(false), 2000);
+          }}
+          className="text-[#9A0D0F] border border-[#9A0D0F] py-3 px-5 shadow-md font-inter rounded-full font-light text-md bg-[#FCCCCC]"
+        >
+          <FontAwesomeIcon icon={faLink} />{" "}
+          {language === "en" ? "Kopier lenke" : "Copy link"}
+        </button>
+      </div>
+
+      {copied && (
+        <p className="font-inter text-[#9A0D0F] pt-2 text-sm px-6 md:px-10">
+          {language === "en" ? "Lenke kopiert!" : "Link copied!"}
+        </p>
+      )}
     </main>
   );
 }
