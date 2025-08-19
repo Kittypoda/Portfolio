@@ -61,8 +61,8 @@ function Work({ language }) {
       link: "/smlt",
       tags: ["design"],
       description: {
-        no: "A modern auction house for lovers of secondhand gems.",
-        en: "Et moderne auksjonshus for deg som elsker gjenbruk.",
+        no: "Sustainable creativity",
+        en: "Bærekraftig kreativitet",
       },
     },
 
