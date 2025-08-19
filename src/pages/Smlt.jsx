@@ -46,11 +46,11 @@ function Smlt({ language }) {
 
 <section className="bg-[#FAF4E8] mx-4 2xl:mx-4 ">
   <div>
-    <p className="text-black text-lg font-bold font-jura py-8 rounded-b-lg px-10 inline-block">
+    <p className="text-black text-lg font-bold font-jura py-2 md:py-8 rounded-b-lg px-10 inline-block">
       SoMe
     </p>
   </div>
-  <div className="grid place-items-center 2xl:px-96 lg:px-80 px-20 py-10">
+  <div className="grid place-items-center 2xl:px-96 lg:px-80 px-20 py-4 md:py-10">
     <img src={SmltSome} alt="" className="block max-w-full h-auto" />
   </div>
 </section>
@@ -66,7 +66,7 @@ function Smlt({ language }) {
             ? `Kommer snart - takk for tålmodigheten ♡`
             : `Coming soon — thank you for your patience ♡`}</h2>
   </div>
- <div className="text-center pb-8">
+ <div className="text-center pb-6">
   <Link to="/work">
             <button className="font-jura underline text-black text-lg">
               {language === "no"
