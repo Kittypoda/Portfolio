@@ -98,10 +98,8 @@ This project was created as part of the JavaScript Frameworks course at Noroff, 
         </section>
         <section className="flex pl-20 pb-10">
           <div className="pt-10">
-            <img src={LevelJoy} alt="gaming joystick" className="h-full w-40" />
-          </div>
-
-          <p className="pt-32 pt-4 text-sm">
+            <img src={LevelJoy} alt="gaming joystick" className="w-40" />
+            <p className="pt-32 pt-4 text-sm">
             Icon from{" "}
             <Link
               className="text-white text-sm underline"
@@ -110,17 +108,18 @@ This project was created as part of the JavaScript Frameworks course at Noroff, 
               Icons8
             </Link>
           </p>
+          </div>
         </section>
       </div>
 
-      <div className="px-6 md:px-20">
+      <div className="px-2 md:px-10">
         <button
           onClick={() => {
             navigator.clipboard.writeText(window.location.href);
             setCopied(true);
             setTimeout(() => setCopied(false), 2000);
           }}
-          className="text-black font-alexandria font-light text-md"
+          className="text-[#9A0D0F] border border-[#9A0D0F] py-3 px-5 shadow-md font-inter rounded-full font-light text-md bg-[#FCCCCC]"
         >
           <FontAwesomeIcon icon={faLink} />{" "}
           {language === "en" ? "Kopier lenke" : "Copy link"}
@@ -128,7 +127,7 @@ This project was created as part of the JavaScript Frameworks course at Noroff, 
       </div>
 
       {copied && (
-        <p className="font-alexandria text-black text-sm px-6 md:px-20">
+        <p className="font-inter text-[#9A0D0F] pt-2 text-sm px-6 md:px-10">
           {language === "en" ? "Lenke kopiert!" : "Link copied!"}
         </p>
       )}

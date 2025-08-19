@@ -20,7 +20,7 @@ function Work({ language }) {
         <ul className="flex justify-center gap-2">{dots}</ul>
       </div>
     ),
-    // FIX: manglet bindestrek i hover:bg-[#9A0D0F]
+   
     customPaging: () => (
       <div className="w-4 h-4 rounded-full bg-white hover:bg-[#9A0D0F] transition" />
     ),
