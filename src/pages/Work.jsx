@@ -54,16 +54,6 @@ function Work({ language }) {
 
   const cards = [
     {
-      src: holidazecard,
-      alt: "Holidaze",
-      link: "/holidaze",
-      tags: ["dev", "design"],
-      description: {
-        no: "Find your next adventure! A booking platform with the user in focus",
-        en: "Finn neste eventyr! En bookingplattform med brukeren i sentrum",
-      },
-    },
-    {
       src: bidzycard,
       alt: "Bidzy",
       link: "/bidzy",
@@ -81,6 +71,16 @@ function Work({ language }) {
       description: {
         no: "Discover, read, and collect your favorite games in one place.",
         en: "Finn, les om og samle dine favorittspill på ett sted.",
+      },
+    },
+    {
+      src: holidazecard,
+      alt: "Holidaze",
+      link: "/holidaze",
+      tags: ["dev", "design"],
+      description: {
+        no: "Find your next adventure! A booking platform with the user in focus",
+        en: "Finn neste eventyr! En bookingplattform med brukeren i sentrum",
       },
     },
   ];
@@ -182,22 +182,3 @@ function Work({ language }) {
 }
 
 export default Work;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
