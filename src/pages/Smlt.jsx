@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import SmltLogo from "../assets/images/smltlogo.png";
@@ -65,6 +66,15 @@ function Smlt({ language }) {
             ? `Kommer snart - takk for tålmodigheten ♡`
             : `Coming soon — thank you for your patience ♡`}</h2>
   </div>
+ <div className="text-center pb-8">
+  <Link to="/work">
+            <button className="font-jura underline text-black text-lg">
+              {language === "no"
+                ? "← Go back to see more work"
+                : "← Tilbake til prosjektene"}
+            </button>
+          </Link>
+          </div>
 </section>
 
 
