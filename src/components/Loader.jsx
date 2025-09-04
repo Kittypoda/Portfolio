@@ -1,16 +1,17 @@
-import odaodaImage from '../assets/images/groupoda.png';
+import odaodaImage from '../assets/images/oda.png';
 
 function Loader() {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-(114deg, #F392A5 1.18%, #A72225 100.81%)">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-[#F392A5] to-[#A72225]">
       <img
         src={odaodaImage}
         alt="Oda logo spinner"
-        className="w-42 h-42 animate-spin-slow opacity-80"
+        className="w-full h-80 animate-spin opacity-80"
       />
     </div>
   );
 }
 
 export default Loader;
+
 

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import About from "./pages/About";
@@ -24,6 +24,17 @@ function App() {
     const timer = setTimeout(() => setLoading(false), 1500);
     return () => clearTimeout(timer);
   }, []);
+
+  const firstNav = useRef(true);
+  useEffect(() => {
+    if (firstNav.current) {
+      firstNav.current = false;
+      return;
+    }
+    setLoading(true);
+    const t = setTimeout(() => setLoading(false), 450);
+    return () => clearTimeout(t);
+  }, [location.pathname, location.search, location.hash]);
 
   const isLevelLanding = location.pathname === "/leveluplounge";
 
@@ -61,6 +72,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
