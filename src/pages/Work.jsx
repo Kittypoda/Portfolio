@@ -21,7 +21,7 @@ function Work({ language }) {
         <ul className="flex justify-center gap-2">{dots}</ul>
       </div>
     ),
-   
+
     customPaging: () => (
       <div className="w-4 h-4 rounded-full bg-white hover:bg-[#9A0D0F] transition" />
     ),
@@ -54,18 +54,6 @@ function Work({ language }) {
   };
 
   const cards = [
-
-    {
-      src: smltcard,
-      alt: "Smlt",
-      link: "/smlt",
-      tags: ["design"],
-      description: {
-        no: "Sustainable creativity",
-        en: "Bærekraftig kreativitet",
-      },
-    },
-
     {
       src: bidzycard,
       alt: "Bidzy",
@@ -94,6 +82,17 @@ function Work({ language }) {
       description: {
         no: "Find your next adventure! A booking platform with the user in focus",
         en: "Finn neste eventyr! En bookingplattform med brukeren i sentrum",
+      },
+    },
+
+    {
+      src: smltcard,
+      alt: "Smlt",
+      link: "/smlt",
+      tags: ["design"],
+      description: {
+        no: "Sustainable creativity",
+        en: "Bærekraftig kreativitet",
       },
     },
   ];
